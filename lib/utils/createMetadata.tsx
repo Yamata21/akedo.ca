@@ -38,7 +38,7 @@ const createMetadata = ({ title }: createMetadataProps) => {
       siteName: "Ākēdo Festival",
       images: [
         {
-          url: "https://genshiken.ca/ogp.jpg",
+          url: "https://genshiken.ca/ogp.png",
         },
       ],
     },
@@ -49,7 +49,7 @@ const createMetadata = ({ title }: createMetadataProps) => {
       title: `Ākēdo Festival - ${title}`,
       description:
         "A University of Guelph anime convention celebrating anime, gaming, art, and pop culture.",
-      images: "https://genshiken.ca/ogp.jpg",
+      images: "https://genshiken.ca/ogp.png",
     },
   };
 
