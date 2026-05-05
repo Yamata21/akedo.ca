@@ -10,7 +10,7 @@ import Callout from "@/lib/components/Callout";
 import Button from "@/lib/components/core/Button";
 import Container from "@/lib/components/core/Container";
 import Heading from "@/lib/components/core/typography/Heading";
-import EventCard from "@/lib/components/EventCard";
+// import EventCard from "@/lib/components/EventCard";
 import Maps from "@/lib/components/Maps";
 import Hero from "@/lib/components/pages/home/Hero";
 
@@ -41,7 +41,7 @@ export default function Home() {
             performances, vendors, artists, and a maid café. The event offers a
             fun and engaging experience for attendees of all ages.
           </Callout>
-          <section className="pb-12" id="events">
+          {/* <section className="pb-12" id="events">
             <Heading level="h2">Events</Heading>
             <p className="mt-4 block md:mt-8 md:text-lg">
               Interested about what&apos;s going on?! Tap on the events below to
@@ -112,7 +112,7 @@ export default function Home() {
                 />
               </div>
             </div>
-          </section>
+          </section> */}
           <section className="flex flex-col gap-4 pb-12 lg:gap-12" id="venue">
             <Heading level="h2">Venue and Location</Heading>
 

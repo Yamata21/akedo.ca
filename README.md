@@ -1,40 +1,42 @@
-# genshiken.ca
+# akedo.ca
 
-<img style="display: block; margin: 0 auto" src="./public/assets/logos/gf-logo-condensed-outline.png" height=200 alt="Genshiken Festival Logo"/>
+<img style="display: block; margin: 0 auto" src="./public/assets/mascot/chibi/corner.png" height="200" alt="Akedo corner mascot art."/>
 
-Genshiken Festival is a one-day convention organized by students from a variety of Ontario University Anime Clubs and brought to you by some of the same organizers as Ākēdo Festival! The Festival features Artist Alleys, Maid Cafe, Performances, and more!
+Ākēdo is a University of Guelph-run student club dedicated to hosting Guelph's largest anime convention. In addition to pop-up events throughout the year, Ākēdo presents its main festival in the fall: a community-driven celebration of anime, gaming, art, and pop culture.
 
-This repository contains the code for the main front-end site used for Genshiken! The website is built in NextJS, Typescript, and Tailwind.
-
-For the development environment, we prefer using `pnpm` as well as Visual Studio Code with the `cspell`, and `prettier` plugins installed. Please enable format on save in VS Code for this project.
+This repository contains the code for the public-facing Ākēdo Festival website. The site is built with Next.js, TypeScript, and Tailwind CSS.
 
 ## Getting Started
 
-To get started with development:
+For local development, use `pnpm`.
 
 ```bash
-# Get all deps.
+# Install dependencies
 pnpm install
 
-# Run the NextJS dev server
+# Run the Next.js dev server
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see the development version of the app!
+Open [http://localhost:3000](http://localhost:3000) to view the development version of the site.
+
+## Project Notes
+
+- Site routes live in `app`.
+- Shared UI components live in `lib/components`.
+- Navigation links are configured in `config/navigation.config.ts`.
+- Static images, PDFs, and other public assets live in `public`.
 
 ## Learn More
 
-To learn more, take a look at the following resources:
+- [pnpm documentation](https://pnpm.io/)
+- [Next.js documentation](https://nextjs.org/docs)
+- [Tailwind CSS documentation](https://tailwindcss.com/)
 
-- [`pnpm` Install and Documentation](https://pnpm.io/) - learn how to install and use `pnpm` instead of `npm`.
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Tailwind Documentation](https://tailwindcss.com/) - learn about tailwind and how to use it.
-- [Google's WebP Image Format](https://developers.google.com/speed/webp) - Given the heavy use of images, this website employs using Google's `webp` format to reduce transfer sizes.
+## Credits
+
+Thank you to [suraj](https://github.com/surajgoraya), the original creator of this website, for building the foundation this version is based on.
 
 ## Deploying
 
-Please reach out over discord in the `#website-general` channel!
-
-<div style="display: flex; width: 100%; justify-content: center;">
-<img style="display: block;" src="./public/assets/mascot/chibi/corner.png" height=200 alt="Ākēdo corner mascot art."/>
-<div>
+Deployment is configured for Cloudflare using OpenNext and Wrangler. Use the existing project deployment process, or coordinate with the website maintainers before publishing changes.

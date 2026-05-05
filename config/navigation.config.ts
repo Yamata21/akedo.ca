@@ -10,10 +10,10 @@ export const ALL_NAVIGATION: NavigationType[] = [
     title: "About",
     href: "/#about",
   },
-  {
-    title: "Events",
-    href: "/#events",
-  },
+  // {
+  //   title: "Events",
+  //   href: "/#events",
+  // },
   {
     title: "Venue",
     href: "/#venue",
