@@ -53,7 +53,7 @@ export default function Hero() {
               quality={100}
               preload={true}
               className={"flex self-center justify-self-center lg:hidden"}
-              src={"/assets/mascot/haru-and-aki-hero-mobile.webp"}
+              src={"/assets/mascot/haru-and-aki-hero-mobile.png"}
               alt=""
               width={1722}
               height={2868}
@@ -64,7 +64,7 @@ export default function Hero() {
               className={
                 "hidden lg:block lg:translate-y-4/24 2xl:translate-y-4/24"
               }
-              src={"/assets/mascot/haru-and-aki-hero.webp"}
+              src={"/assets/mascot/haru-and-aki-hero.png"}
               alt=""
               width={1722}
               height={2868}
