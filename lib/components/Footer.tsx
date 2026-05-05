@@ -10,11 +10,11 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="min-w-screen">
-      <div className="bg-brand-white inset-shadow-brand-purple/50 relative flex min-h-72 flex-col overflow-clip px-12 pt-24 inset-shadow-xs sm:min-h-48 sm:px-32 md:justify-center md:pt-0">
-        <div className="">
+      <div className="bg-brand-white inset-shadow-brand-purple/50 relative flex flex-col justify-center overflow-clip px-12 py-10 inset-shadow-xs sm:px-32">
+        <div className="flex flex-col items-start gap-4">
           <Image
             loading="lazy"
-            className="mb-6 h-auto w-36 md:w-44"
+            className="h-auto w-36 md:w-44"
             src={"/ogp.png"}
             width={1080}
             height={1080}
