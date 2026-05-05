@@ -21,13 +21,13 @@ export default function Hero() {
             id="hero__genshiken-info"
             className="flex flex-1 flex-col justify-center pt-24 lg:mt-0 lg:translate-y-0 lg:pt-0"
           >
-            <h1 className="font-brand lg:leading-auto text-center text-6xl font-black md:text-8xl lg:text-left xl:text-8xl">
+            <h1 className="font-brand lg:leading-auto text-brand-white text-center text-6xl font-black md:text-8xl lg:text-left xl:text-8xl">
               Ākēdo Festival
             </h1>
-            <h2 className="text-brand-purple mt-4 text-center text-xl font-light tracking-[20%] uppercase lg:text-left lg:text-2xl xl:text-4xl">
+            <h2 className="text-brand-white/70 mt-4 text-center text-xl font-light tracking-[20%] uppercase lg:text-left lg:text-2xl xl:text-4xl">
               Anime Convention
             </h2>
-            <p className="mt-4 text-center text-xs font-medium uppercase leading-relaxed lg:text-left lg:text-lg xl:text-xl">
+            <p className="text-brand-white mt-4 text-center text-xs font-medium uppercase leading-relaxed lg:text-left lg:text-lg xl:text-xl">
               University of Guelph, University Centre
               <br />
               50 Stone Rd E, Guelph, ON N1G 2W1
