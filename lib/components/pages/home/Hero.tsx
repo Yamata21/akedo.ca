@@ -22,13 +22,17 @@ export default function Hero() {
             className="flex flex-1 flex-col justify-center pt-24 lg:mt-0 lg:translate-y-0 lg:pt-0"
           >
             <h1 className="font-brand lg:leading-auto text-center text-6xl font-black md:text-8xl lg:text-left xl:text-8xl">
-              Genshiken Festival
+              Ākēdo Festival
             </h1>
             <h2 className="text-brand-purple mt-4 text-center text-xl font-light tracking-[20%] uppercase lg:text-left lg:text-2xl xl:text-4xl">
-              March 28, 2026
+              Anime Convention
             </h2>
-            <p className="mt-4 text-center text-xs font-medium uppercase lg:text-left lg:text-lg xl:text-xl">
-              The Warehouse Venue, Toronto, Ontario
+            <p className="mt-4 text-center text-xs font-medium uppercase leading-relaxed lg:text-left lg:text-lg xl:text-xl">
+              University of Guelph, University Centre
+              <br />
+              50 Stone Rd E, Guelph, ON N1G 2W1
+              <br />
+              October 17th, 2026, 11AM - 7PM
             </p>
             <div className="xl:w-10.5/12 mt-12 hidden lg:block">
               <CTA

@@ -28,14 +28,18 @@ export default function Home() {
         <Hero />
         <Container className="mt-20 flex flex-col gap-12 lg:mt-24">
           <Callout
-            title="What is Genshiken?"
+            title="What is Akedo?"
             className="mb-8 scroll-mt-38"
             id="about"
           >
-            Genshiken Festival is a one-day convention organized by students
-            from a variety of Ontario University Anime Clubs and brought to you
-            by some of the same organizers as Ākēdo Festival! The Festival
-            features Artist Alleys, Maid Cafe, Performances, and more!
+            Ākēdo is a University of Guelph–run student club dedicated to
+            hosting Guelph&apos;s largest anime convention. In addition to
+            pop-up events throughout the year, we present our main festival in
+            the Fall. Ākēdo Festival is a community-driven event celebrating
+            anime, gaming, art, and pop culture, bringing together fans,
+            creators, and local talent through interactive programming,
+            performances, vendors, artists, and a maid café. The event offers a
+            fun and engaging experience for attendees of all ages.
           </Callout>
           <section className="pb-12" id="events">
             <Heading level="h2">Events</Heading>
@@ -118,7 +122,7 @@ export default function Home() {
                   showIcon="box-arrow-in-up-right"
                   className={"w-full"}
                   target="_blank"
-                  href="https://maps.app.goo.gl/2vX7FnwUebHquWSC6"
+                  href="https://www.google.com/maps/search/?api=1&query=University%20Centre%2C%2050%20Stone%20Rd%20E%2C%20Guelph%2C%20ON%20N1G%202W1"
                 >
                   Get Directions
                 </Button>
@@ -130,16 +134,19 @@ export default function Home() {
                 </p> */}
                   <p className="text-xl leading-relaxed font-bold lg:text-2xl">
                     <span className="text-brand-purple">
-                      March 28, 2026, 11:00AM - 7:00PM @&nbsp;
+                      October 17th, 2026,
+                      <br className="hidden lg:block" />
+                      11AM - 7PM
                       <br className="hidden lg:block" />
                     </span>
-                    The Warehouse Venue
+                    University of Guelph,
+                    <br className="hidden lg:block" />
+                    University Centre
                   </p>
                   <p className="italic lg:text-lg">
-                    35 Carl Hall Rd #2, North York, ON M3K 2E2
-                  </p>
-                  <p className="text-sm font-light tracking-[5%] uppercase lg:text-base">
-                    Located in Downsview Park
+                    50 Stone Rd E, Guelph,
+                    <br className="hidden lg:block" />
+                    ON N1G 2W1
                   </p>
                 </div>
                 <div className="absolute bottom-0 left-0 hidden min-w-full lg:block">
@@ -147,7 +154,7 @@ export default function Home() {
                     showIcon="box-arrow-in-up-right"
                     className={"w-full rounded-t-none"}
                     target="_blank"
-                    href="https://maps.app.goo.gl/2vX7FnwUebHquWSC6"
+                    href="https://www.google.com/maps/search/?api=1&query=University%20Centre%2C%2050%20Stone%20Rd%20E%2C%20Guelph%2C%20ON%20N1G%202W1"
                   >
                     Get Directions
                   </Button>
@@ -155,9 +162,7 @@ export default function Home() {
               </div>
               <Maps
                 className={"lg:flex-2"}
-                embedCode={
-                  "!1m18!1m12!1m3!1d6440.091444735843!2d-79.48130612202827!3d43.74630747109794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40574c0bd6d5473b%3A0x6e8a3ad81b060113!2sThe%20Warehouse%20Venue!5e1!3m2!1sen!2sca!4v1771187358717!5m2!1sen!2sca"
-                }
+                src="https://maps.google.com/maps?q=University%20Centre%2C%2050%20Stone%20Rd%20E%2C%20Guelph%2C%20ON%20N1G%202W1&output=embed"
               />
             </div>
             {/* <Paragraph>
@@ -217,27 +222,27 @@ export default function Home() {
       </main>
       {createJSON_LD({
         type: "Event",
-        name: "Genshiken Festival 2026",
-        alternateName: "Genshiken Festival 2026",
+        name: "Ākēdo Festival 2026",
+        alternateName: "Akedo Festival 2026",
         description:
-          "Genshiken Festival is a one-day convention organized by students from a variety of Ontario University Anime Clubs and brought to you by some of the same organizers as Ākēdo Festival! The Festival features Artist Alleys, Maid Cafe, Performances, and more!",
+          "Ākēdo Festival is a community-driven anime convention hosted by the University of Guelph-run Ākēdo student club.",
         image: "https://genshiken.ca/ogp.png",
         url: "https://genshiken.ca/",
         typeSpecific: {
-          startDate: "2026-03-28T11:00-05:00",
-          endDate: "2026-03-28T19:00-05:00",
+          startDate: "2026-10-17T11:00-04:00",
+          endDate: "2026-10-17T19:00-04:00",
           eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
           eventStatus: "https://schema.org/EventScheduled",
           location: {
-            name: "The Warehouse Venue",
-            streetAddress: "35 Carl Hall Rd #2",
-            locality: "North York",
+            name: "University of Guelph, University Centre",
+            streetAddress: "50 Stone Rd E",
+            locality: "Guelph",
             region: "Ontario",
             country: "Canada",
-            postalCode: "M3K 2E2",
+            postalCode: "N1G 2W1",
           },
           organization: {
-            name: "Genshiken Festival Organizing Committee & Ontario Anime Society",
+            name: "Ākēdo",
             url: "https://genshiken.ca",
           },
         },

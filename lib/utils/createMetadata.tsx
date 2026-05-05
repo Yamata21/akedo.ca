@@ -16,24 +16,26 @@ import { Metadata } from "next";
  */
 const createMetadata = ({ title }: createMetadataProps) => {
   const md: Metadata = {
-    title: `Genshiken Festival - ${title}`,
+    title: `Ākēdo Festival - ${title}`,
     description:
-      "A 1-Day anime convention hosted by Students from various University Anime Clubs across Ontario!",
+      "A University of Guelph anime convention celebrating anime, gaming, art, and pop culture.",
     keywords: [
-      "Genshiken",
-      "Genshiken Festival",
+      "Ākēdo",
+      "Akedo",
+      "Ākēdo Festival",
+      "Akedo Festival",
       "Anime Convention",
-      "University Anime Clubs",
+      "University of Guelph",
       "Anime Canada",
       "Anime Festival",
     ],
     openGraph: {
       type: "website",
       url: "https://genshiken.ca/",
-      title: `Genshiken Festival - ${title}`,
+      title: `Ākēdo Festival - ${title}`,
       description:
-        "A 1-Day anime convention hosted by Students from various University Anime Clubs across Ontario!",
-      siteName: "Genshiken Festival",
+        "A University of Guelph anime convention celebrating anime, gaming, art, and pop culture.",
+      siteName: "Ākēdo Festival",
       images: [
         {
           url: "https://genshiken.ca/ogp.jpg",
@@ -44,9 +46,9 @@ const createMetadata = ({ title }: createMetadataProps) => {
       card: "summary_large_image",
       site: "@GenshikenFes",
       creator: "@GenshikenFes",
-      title: `Genshiken Festival - ${title}`,
+      title: `Ākēdo Festival - ${title}`,
       description:
-        "A 1-Day anime convention hosted by Students from various University Anime Clubs across Ontario!",
+        "A University of Guelph anime convention celebrating anime, gaming, art, and pop culture.",
       images: "https://genshiken.ca/ogp.jpg",
     },
   };

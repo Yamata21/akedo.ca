@@ -42,7 +42,7 @@ export default function Navbar({ items }: { items: NavigationType[] }) {
         <p
           className={`font-brand text-brand-white font-bold ${scrolled ? "opacity-100" : "opacity-0"} transition-all`}
         >
-          Genshiken Festival
+          Ākēdo Festival
         </p>
         <button
           onClick={() => setMenuOpen((prev) => !prev)}

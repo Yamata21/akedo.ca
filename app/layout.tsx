@@ -24,9 +24,9 @@ const fredoka = Fredoka({
 });
 
 export const metadata: Metadata = {
-  title: "Genshiken Festival 2026",
+  title: "Ākēdo Festival 2026",
   description:
-    "A 1-Day anime convention hosted by Ontario Universities Anime Clubs & Students!",
+    "A University of Guelph anime convention celebrating anime, gaming, art, and pop culture.",
 };
 
 export default function RootLayout({
