@@ -24,7 +24,7 @@ export const ALL_NAVIGATION: NavigationType[] = [
     newWindow: true,
   },
   {
-    title: "TOS/Policies",
+    title: "Tos/Policies",
     href: "/assets/2026/Genshiken_2026_Policies.pdf",
     newWindow: true,
   },
