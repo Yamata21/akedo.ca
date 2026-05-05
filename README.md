@@ -36,6 +36,5 @@ To learn more, take a look at the following resources:
 Please reach out over discord in the `#website-general` channel!
 
 <div style="display: flex; width: 100%; justify-content: center;">
-<img style="display: block;" src="./public/assets/mascot/chibi/haruheart.webp" height=200 alt="Haru, Genshiken's mascot holding a big red heart with a gleeful look on his face."/>
-<img style="display: block;" src="./public/assets/mascot/chibi/akiheart.webp" height=200 alt="Aki, Genshiken's mascot holding a big purple heart with a gleeful look on her face."/>
+<img style="display: block;" src="./public/assets/mascot/chibi/corner.png" height=200 alt="Ākēdo corner mascot art."/>
 <div>

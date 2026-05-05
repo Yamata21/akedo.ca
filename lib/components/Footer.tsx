@@ -17,21 +17,13 @@ export default function Footer() {
             Committee.
           </p>
         </div>
-        <div className="right-0 bottom-0 mt-24 flex items-center justify-between opacity-50 md:absolute md:justify-center">
+        <div className="right-0 bottom-0 mt-24 flex items-center justify-end opacity-50 md:absolute">
           <Image
             loading="lazy"
-            className="-ml-14 max-w-25 md:ml-0 xl:max-w-34"
-            src={"/assets/mascot/chibi/haruheart.webp"}
-            width={150}
-            height={150}
-            alt=""
-          />
-          <Image
-            loading="lazy"
-            className="-mr-14 max-w-25 md:mr-0 xl:max-w-34"
-            src={"/assets/mascot/chibi/akiheart.webp"}
-            width={150}
-            height={150}
+            className="-mr-14 max-w-36 md:mr-0 xl:max-w-44"
+            src={"/assets/mascot/chibi/corner.png"}
+            width={2048}
+            height={2048}
             alt=""
           />
         </div>
