@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="min-w-screen">
-      <div className="bg-brand-white inset-shadow-brand-purple/50 relative flex flex-col justify-center overflow-clip px-12 py-10 inset-shadow-xs sm:px-32">
+      <div className="bg-[#d8c9f2] inset-shadow-brand-purple/50 relative flex flex-col justify-center overflow-clip px-12 py-10 inset-shadow-xs sm:px-32">
         <div className="flex flex-col items-start gap-4">
           <Image
             loading="lazy"
