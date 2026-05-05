@@ -4,12 +4,13 @@
   "name": "genshiken-ca",
   // Set this to today's date
   "compatibility_date": "2026-02-18",
-  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS",
   },
-
   "observability": {
     "enabled": false,
     "head_sampling_rate": 1,
@@ -25,9 +26,14 @@
       "head_sampling_rate": 1,
     },
   },
-
-  "route": {
-    "pattern": "genshiken.ca",
-    "custom_domain": true,
-  },
+  "routes": [
+    {
+      "pattern": "akedofestival.ca",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.akedofestival.ca",
+      "custom_domain": true
+    }
+  ]
 }
