@@ -35,7 +35,7 @@ export default function Callout({
       </div>
       <Image
         className="absolute -bottom-9.5 -left-6.5 h-24 w-24 md:-bottom-12 md:-left-8 md:h-31.25 md:w-31.25"
-        src={"/assets/flowers.webp"}
+        src={"/assets/flowers.png"}
         alt=""
         height={125}
         width={125}
