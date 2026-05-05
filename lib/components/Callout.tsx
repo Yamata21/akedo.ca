@@ -22,7 +22,7 @@ export default function Callout({
 }>) {
   return (
     <div className={`relative mx-auto max-w-4xl ${className}`} id={id}>
-      <div className="bg-brand-white border-brand-purple relative flex flex-col gap-4 rounded-2xl border-2 p-12">
+      <div className="border-brand-purple relative flex flex-col gap-4 rounded-2xl border-2 bg-[#d8c9f2] p-12">
         <Image
           className="absolute -top-10 -right-14 h-20 w-26 object-contain md:-top-15 md:-right-18 md:h-25 md:w-32.5"
           src={"/assets/mascot/chibi/kiko_kick.png"}

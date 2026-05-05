@@ -127,7 +127,7 @@ export default function Home() {
                   Get Directions
                 </Button>
               </div>
-              <div className="lg:bg-brand-white relative flex flex-col justify-center rounded-2xl lg:flex-1 lg:p-8">
+              <div className="relative flex flex-col justify-center rounded-2xl lg:flex-1 lg:bg-[#d8c9f2] lg:p-8">
                 <div className="flex flex-col gap-2 lg:-translate-y-8">
                   {/* <p className="font-light tracking-[20%] uppercase opacity-80 lg:ml-1 lg:-translate-y-6 lg:text-xl">
                   March 28th, 2026 at
