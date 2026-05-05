@@ -84,7 +84,7 @@ export default function Navbar({ items }: { items: NavigationType[] }) {
           className={`bg-brand-indigo/95 border-brand-white/20 shadow-brand-indigo/30 flex h-full justify-center border-b px-6 shadow-lg transition-all backdrop-blur-lg ${scrolled ? "w-full rounded-b-2xl xl:w-[80%] 2xl:w-[50%]" : "w-full rounded-b-none"}`}
         >
           <ul
-            className={`flex h-full flex-col items-center justify-center gap-3 transition-all md:flex-row lg:gap-6`}
+            className={`flex h-full ${scrolled ? "translate-x-0" : "md:translate-x-24"} flex-col items-center justify-center gap-3 transition-all md:flex-row lg:gap-6`}
           >
             {items.map((menuItem) => (
               <li key={menuItem.title}>
