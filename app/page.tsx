@@ -226,7 +226,7 @@ export default function Home() {
         alternateName: "Akedo Festival 2026",
         description:
           "Ākēdo Festival is a community-driven anime convention hosted by the University of Guelph-run Ākēdo student club.",
-        image: "https://genshiken.ca/ogp.png",
+        image: "https://genshiken.ca/ogp.jpg",
         url: "https://genshiken.ca/",
         typeSpecific: {
           startDate: "2026-10-17T11:00-04:00",
