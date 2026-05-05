@@ -12,6 +12,14 @@ export default function Footer() {
     <footer className="min-w-screen">
       <div className="bg-brand-white inset-shadow-brand-purple/50 relative flex min-h-72 flex-col overflow-clip px-12 pt-24 inset-shadow-xs sm:min-h-48 sm:px-32 md:justify-center md:pt-0">
         <div className="">
+          <Image
+            loading="lazy"
+            className="mb-6 h-auto w-36 md:w-44"
+            src={"/ogp.png"}
+            width={1080}
+            height={1080}
+            alt="Ākēdo Festival"
+          />
           <p className="text-base font-bold uppercase lg:text-lg">
             &copy; {new Date().getFullYear()} Ākēdo Festival Organizing
             Committee.

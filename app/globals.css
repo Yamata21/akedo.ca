@@ -10,15 +10,16 @@
 
 :root {
   --background-base: #fff;
-  --background-brand: hsl(255, 40%, 98%);
+  --background-brand: #efd864;
   --foreground: #171717;
 }
 
 @theme {
   --breakpoint-xs: 375px;
-  /* --color-brand-white: #f9f9f9; */
-  --color-brand-white: hsl(255, 40%, 98%);
-  --color-brand-purple: #8a7cc8;
+  --color-brand-white: #efd864;
+  --color-brand-purple: #662d8b;
+  --color-brand-indigo: #342b5a;
+  --color-brand-orange: #e27637;
   --font-brand: "Fredoka", "Inter", Helvetica, sans-serif;
 }
 
