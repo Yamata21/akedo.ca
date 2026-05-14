@@ -36,7 +36,7 @@ export default function Hero() {
             </p>
             <div className="xl:w-10.5/12 mt-12 hidden lg:block">
               <CTA
-                href="https://www.zeffy.com/en-CA/ticketing/genshiken-festival-march-28th"
+                href="https://www.zeffy.com/en-CA/ticketing/akedo-festival--2026"
                 className={
                   "shadow-brand-purple/50 min-w-full shadow-xl hover:shadow-none focus:shadow-none"
                 }
@@ -73,7 +73,7 @@ export default function Hero() {
         </Container>
       </div>
       <CTA
-        href="https://www.zeffy.com/en-CA/ticketing/genshiken-festival-march-28th"
+        href="https://www.zeffy.com/en-CA/ticketing/akedo-festival--2026"
         className={
           "shadow-brand-purple/50 z-10 max-w-[75%] -translate-y-8 shadow-2xl hover:shadow-2xs focus:shadow-none lg:hidden"
         }

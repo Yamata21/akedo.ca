@@ -31,25 +31,25 @@ const createMetadata = ({ title }: createMetadataProps) => {
     ],
     openGraph: {
       type: "website",
-      url: "https://genshiken.ca/",
+      url: "https://akedofestival.ca/",
       title: `Ākēdo Festival - ${title}`,
       description:
         "A University of Guelph anime convention celebrating anime, gaming, art, and pop culture.",
       siteName: "Ākēdo Festival",
       images: [
         {
-          url: "https://genshiken.ca/ogp.jpg",
+          url: "https://akedofestival.ca/ogp.jpg",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      site: "@GenshikenFes",
-      creator: "@GenshikenFes",
+      site: "@AkedoFestival",
+      creator: "@AkedoFestival",
       title: `Ākēdo Festival - ${title}`,
       description:
         "A University of Guelph anime convention celebrating anime, gaming, art, and pop culture.",
-      images: "https://genshiken.ca/ogp.jpg",
+      images: "https://akedofestival.ca/ogp.jpg",
     },
   };
 

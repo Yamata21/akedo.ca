@@ -176,45 +176,59 @@ export default function Home() {
             <div className="mx-auto mt-8 mb-8 flex max-w-2xl justify-between gap-4 text-2xl md:text-4xl lg:mt-4 lg:min-w-lg xl:min-w-xl">
               <a
                 className="hover:text-brand-purple focus:text-brand-purple m-0 opacity-75 transition-all hover:opacity-100"
-                href="https://discord.gg/M3dhac79f8"
+                href="https://discord.gg/g6Wmx3VWHD"
                 aria-label="Discord"
               >
                 <i className="bi bi-discord"></i>
               </a>
               <a
                 className="hover:text-brand-purple focus:text-brand-purple m-0 opacity-75 transition-all hover:opacity-100"
-                href="https://www.instagram.com/genshikenfestival/"
+                href="https://www.instagram.com/akedofestival/"
                 aria-label="Instagram"
               >
                 <i className="bi bi-instagram"></i>
               </a>
               <a
                 className="hover:text-brand-purple focus:text-brand-purple m-0 opacity-75 transition-all hover:opacity-100"
-                href="https://www.tiktok.com/@genshikenfestival"
+                href="https://www.tiktok.com/@akedo.festival"
                 aria-label="TikTok"
               >
                 <i className="bi bi-tiktok"></i>
               </a>
               <a
                 className="hover:text-brand-purple focus:text-brand-purple m-0 opacity-75 transition-all hover:opacity-100"
-                href="https://www.youtube.com/@GenshikenFestival"
-                aria-label="YouTube"
-              >
-                <i className="bi bi-youtube"></i>
-              </a>
-              <a
-                className="hover:text-brand-purple focus:text-brand-purple m-0 opacity-75 transition-all hover:opacity-100"
-                href="https://twitter.com/GenshikenFes"
+                href="https://x.com/AkedoFestival"
                 aria-label="Twitter / X"
               >
-                <i className="bi bi-twitter"></i>
+                <i className="bi bi-twitter-x"></i>
               </a>
               <a
                 className="hover:text-brand-purple focus:text-brand-purple m-0 opacity-75 transition-all hover:opacity-100"
-                href="mailto:genshikenfestival@gmail.com"
+                href="https://www.facebook.com/share/1BRmBmwUtC/"
+                aria-label="Facebook"
+              >
+                <i className="bi bi-facebook"></i>
+              </a>
+              <a
+                className="hover:text-brand-purple focus:text-brand-purple m-0 opacity-75 transition-all hover:opacity-100"
+                href="mailto:marketing@akedo.ca"
                 aria-label="Email"
               >
                 <i className="bi bi-envelope-heart-fill"></i>
+              </a>
+              <a
+                className="hover:text-brand-purple focus:text-brand-purple m-0 opacity-75 transition-all hover:opacity-100"
+                href="https://akedo.ca"
+                aria-label="Website"
+              >
+                <i className="bi bi-globe2"></i>
+              </a>
+              <a
+                className="hover:text-brand-purple focus:text-brand-purple m-0 opacity-75 transition-all hover:opacity-100"
+                href="https://linktr.ee/akedofestival"
+                aria-label="LinkTree"
+              >
+                <i className="bi bi-link-45deg"></i>
               </a>
             </div>
           </section>
@@ -226,8 +240,8 @@ export default function Home() {
         alternateName: "Akedo Festival 2026",
         description:
           "Ākēdo Festival is a community-driven anime convention hosted by the University of Guelph-run Ākēdo student club.",
-        image: "https://genshiken.ca/ogp.jpg",
-        url: "https://genshiken.ca/",
+        image: "https://akedofestival.ca/ogp.jpg",
+        url: "https://akedofestival.ca/",
         typeSpecific: {
           startDate: "2026-10-17T11:00-04:00",
           endDate: "2026-10-17T19:00-04:00",
@@ -243,7 +257,7 @@ export default function Home() {
           },
           organization: {
             name: "Ākēdo",
-            url: "https://genshiken.ca",
+            url: "https://akedofestival.ca",
           },
         },
       })}

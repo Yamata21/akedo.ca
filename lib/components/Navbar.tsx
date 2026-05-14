@@ -64,7 +64,7 @@ export default function Navbar({ items }: { items: NavigationType[] }) {
           <li>
             <Link
               href={
-                "https://www.zeffy.com/en-CA/ticketing/genshiken-festival-march-28th"
+                "https://www.zeffy.com/en-CA/ticketing/akedo-festival--2026"
               }
               target="_blank"
               className="bg-brand-orange hover:bg-brand-white focus:bg-brand-white text-white hover:text-brand-indigo focus:text-brand-indigo rounded-lg px-4 py-2 font-semibold transition-colors"
@@ -101,7 +101,7 @@ export default function Navbar({ items }: { items: NavigationType[] }) {
             >
               <Link
                 href={
-                  "https://www.zeffy.com/en-CA/ticketing/genshiken-festival-march-28th"
+                  "https://www.zeffy.com/en-CA/ticketing/akedo-festival--2026"
                 }
                 target="_blank"
                 className="bg-brand-orange hover:bg-brand-white focus:bg-brand-white text-white hover:text-brand-indigo focus:text-brand-indigo rounded-lg px-4 py-2 font-semibold transition-colors"
