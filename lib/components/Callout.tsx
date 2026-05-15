@@ -34,11 +34,11 @@ export default function Callout({
         <Paragraph className="">{children}</Paragraph>
       </div>
       <Image
-        className="absolute -bottom-9.5 -left-6.5 h-24 w-24 md:-bottom-12 md:-left-8 md:h-31.25 md:w-31.25"
-        src={"/assets/flowers.png"}
+        className="absolute -bottom-12 -left-8 h-32 w-32 object-contain md:-bottom-18 md:-left-12 md:h-48 md:w-48"
+        src={"/assets/spraycan.png"}
         alt=""
-        height={125}
-        width={125}
+        height={3048}
+        width={2995}
       />
     </div>
   );
