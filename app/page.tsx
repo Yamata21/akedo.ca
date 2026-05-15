@@ -28,7 +28,7 @@ export default function Home() {
         <Hero />
         <Container className="mt-20 flex flex-col gap-12 lg:mt-24">
           <Callout
-            title="What is Akedo?"
+            title="What is Ākēdo?"
             className="mb-8 scroll-mt-38"
             id="about"
           >
