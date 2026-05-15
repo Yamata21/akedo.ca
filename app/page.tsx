@@ -136,16 +136,21 @@ export default function Home() {
                     <span className="text-brand-purple">
                       October 17th, 2026,
                       <br className="hidden lg:block" />
+                      {" "}
                       11AM - 7PM
                       <br className="hidden lg:block" />
+                      {" "}
                     </span>
+                    {" "}
                     University of Guelph,
                     <br className="hidden lg:block" />
+                    {" "}
                     University Centre
                   </p>
                   <p className="italic lg:text-lg">
                     50 Stone Rd E, Guelph,
                     <br className="hidden lg:block" />
+                    {" "}
                     ON N1G 2W1
                   </p>
                 </div>

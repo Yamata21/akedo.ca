@@ -20,6 +20,11 @@ const policySections: {
     title: "Land Acknowledgement",
     paragraphs: [
       "The University of Guelph resides within the Dish with One Spoon wampum, an agreement between the Haudenosaunee and Anishinaabeg to share and care for the land. The Guelph campus is located within the Between the Lakes Purchase and on the treaty lands of the Mississaugas of the Credit. These lands reflect the long-standing and ongoing relationships Indigenous peoples have with the land.",
+    ],
+  },
+  {
+    title: "Terms of Conduct",
+    paragraphs: [
       "Ākēdo Festival staff and volunteers reserve the right to issue warnings or remove attendees from the convention in the event of non-compliance with Terms of Conduct or convention policies. Campus security and/or law enforcement may be involved if necessary. Attendees may be held responsible for any damages caused to venue property, equipment, or event materials. Any fines, penalties, or legal consequences resulting from an individual’s actions will be the responsibility of the individual involved.",
     ],
   },
