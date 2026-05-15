@@ -36,7 +36,7 @@ export default function GalleryPage() {
                 >
                   <img
                     alt={image.alt}
-                    className="block h-auto w-full"
+                    className="block h-auto w-full transition-transform duration-300 ease-out lg:hover:scale-105"
                     loading="lazy"
                     src={image.src}
                   />
