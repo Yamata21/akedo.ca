@@ -4,7 +4,10 @@
   "author": "Phulkari Digital, on behalf of Ontario Anime Society",
   "private": true,
   "scripts": {
+    "generate-gallery": "node scripts/generate-gallery-manifest.mjs",
+    "predev": "node scripts/generate-gallery-manifest.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/generate-gallery-manifest.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
