@@ -19,9 +19,8 @@ export const ALL_NAVIGATION: NavigationType[] = [
     href: "/#venue",
   },
   {
-    title: "Event Guide",
-    href: "/assets/2026/Genshiken_2026_Guide.pdf",
-    newWindow: true,
+    title: "Gallery",
+    href: "/gallery",
   },
   {
     title: "TOS/Policies",

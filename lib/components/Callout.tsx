@@ -34,7 +34,7 @@ export default function Callout({
         <Paragraph className="">{children}</Paragraph>
       </div>
       <Image
-        className="absolute -bottom-12 -left-8 h-32 w-32 object-contain md:-bottom-18 md:-left-12 md:h-48 md:w-48"
+        className="absolute -bottom-10 -left-7 h-24 w-24 object-contain md:-bottom-14 md:-left-10 md:h-36 md:w-36"
         src={"/assets/spraycan.png"}
         alt=""
         height={3048}
