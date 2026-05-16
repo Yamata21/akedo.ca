@@ -51,7 +51,7 @@ export default function Hero() {
           </div>
           <div
             id="hero__genshiken-mascots--desktop"
-            className="flex w-[75%] flex-row items-center justify-center"
+            className="flex w-[75%] flex-row items-center"
           >
             <Image
               quality={100}
@@ -66,7 +66,7 @@ export default function Hero() {
               quality={100}
               preload={true}
               className={
-                "hidden w-auto object-contain lg:block lg:max-h-[46rem] lg:-translate-x-8 lg:translate-y-12 xl:max-h-[52rem] xl:-translate-x-16"
+                "hidden lg:block lg:translate-y-4/24 2xl:translate-y-4/24"
               }
               src={"/assets/mascot/haru-and-aki-hero.png"}
               alt=""
