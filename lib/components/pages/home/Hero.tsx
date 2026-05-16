@@ -66,7 +66,7 @@ export default function Hero() {
               quality={100}
               preload={true}
               className={
-                "hidden w-auto object-contain lg:block lg:max-h-[39rem] lg:translate-y-8 xl:max-h-[43rem]"
+                "hidden w-auto object-contain lg:block lg:max-h-[46rem] lg:-translate-x-8 lg:translate-y-12 xl:max-h-[52rem] xl:-translate-x-16"
               }
               src={"/assets/mascot/haru-and-aki-hero.png"}
               alt=""
