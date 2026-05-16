@@ -16,11 +16,11 @@ export default function Hero() {
       <div className="bg-brand-white overflow-clip bg-[url('/assets/hero-bg.webp')] bg-cover bg-no-repeat lg:w-full">
         <Container
           extended
-          className="relative box-content flex min-h-[80vh] flex-col items-center justify-center pb-16 md:box-border md:justify-between lg:min-h-[36rem] lg:flex-row lg:pt-20 xl:min-h-[38rem]"
+          className="relative box-content flex h-[80vh] flex-col items-center justify-center md:box-border md:justify-between lg:flex-row"
         >
           <div
             id="hero__genshiken-info"
-            className="flex flex-1 flex-col justify-center pt-24 lg:mt-0 lg:translate-y-6 lg:pt-0"
+            className="flex flex-1 flex-col justify-center pt-24 lg:mt-0 lg:translate-y-0 lg:pt-0"
           >
             <h1 className="font-brand lg:leading-auto text-center text-6xl font-black text-white md:text-8xl lg:text-left xl:text-8xl">
               Ākēdo Festival
@@ -35,7 +35,7 @@ export default function Hero() {
               <br />
               October 17th, 2026, 11AM - 7PM
             </p>
-            <div className="xl:w-10.5/12 mt-6 hidden lg:block">
+            <div className="xl:w-10.5/12 mt-5 hidden lg:block">
               <EventCountdown />
             </div>
             <div className="xl:w-10.5/12 mt-4 hidden lg:block">
