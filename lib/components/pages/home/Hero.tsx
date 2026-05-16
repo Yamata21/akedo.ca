@@ -20,7 +20,7 @@ export default function Hero() {
         >
           <div
             id="hero__genshiken-info"
-            className="flex flex-1 flex-col justify-center pt-24 lg:mt-0 lg:translate-y-0 lg:pt-0"
+            className="flex flex-1 flex-col justify-center pt-24 lg:mt-0 lg:translate-y-0 lg:pt-8"
           >
             <h1 className="font-brand lg:leading-auto text-center text-6xl font-black text-white md:text-8xl lg:text-left xl:text-8xl">
               Ākēdo Festival
