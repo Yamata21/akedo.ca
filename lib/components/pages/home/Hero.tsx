@@ -6,6 +6,7 @@
  */
 
 import CTA from "@/lib/components/core/CTA";
+import EventCountdown from "@/lib/components/pages/home/EventCountdown";
 import Image from "next/image";
 import Container from "@/lib/components/core/Container";
 
@@ -34,11 +35,12 @@ export default function Hero() {
               <br />
               October 17th, 2026, 11AM - 7PM
             </p>
+            <EventCountdown />
             <div className="xl:w-10.5/12 mt-12 hidden lg:block">
               <CTA
                 href="https://www.zeffy.com/en-CA/ticketing/akedo-festival--2026"
                 className={
-                  "shadow-brand-purple/50 min-w-full shadow-xl hover:shadow-none focus:shadow-none"
+                  "!bg-brand-orange min-w-full border-2 border-white/80 shadow-xl shadow-black/30 hover:!bg-[#ef8a4f] hover:shadow-none focus:!bg-[#ef8a4f] focus:shadow-none"
                 }
               >
                 Buy Tickets Now!
@@ -75,7 +77,7 @@ export default function Hero() {
       <CTA
         href="https://www.zeffy.com/en-CA/ticketing/akedo-festival--2026"
         className={
-          "shadow-brand-purple/50 z-10 max-w-[75%] -translate-y-8 shadow-2xl hover:shadow-2xs focus:shadow-none lg:hidden"
+          "!bg-brand-orange z-10 max-w-[75%] -translate-y-8 border-2 border-white/80 shadow-2xl shadow-black/30 hover:!bg-[#ef8a4f] hover:shadow-2xs focus:!bg-[#ef8a4f] focus:shadow-none lg:hidden"
         }
       >
         Buy Tickets Now!
