@@ -6,6 +6,7 @@
  */
 
 import CTA from "@/lib/components/core/CTA";
+import EventCountdown from "@/lib/components/pages/home/EventCountdown";
 import Image from "next/image";
 import Container from "@/lib/components/core/Container";
 
@@ -17,6 +18,9 @@ export default function Hero() {
           extended
           className="relative box-content flex h-[80vh] flex-col items-center justify-center md:box-border md:justify-between lg:flex-row"
         >
+          <div className="absolute top-6 right-4 hidden lg:block xl:right-12">
+            <EventCountdown />
+          </div>
           <div
             id="hero__genshiken-info"
             className="flex flex-1 flex-col justify-center pt-24 lg:mt-0 lg:translate-y-0 lg:pt-0"

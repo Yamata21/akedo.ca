@@ -12,7 +12,6 @@ import Container from "@/lib/components/core/Container";
 import Heading from "@/lib/components/core/typography/Heading";
 // import EventCard from "@/lib/components/EventCard";
 import Maps from "@/lib/components/Maps";
-import EventCountdown from "@/lib/components/pages/home/EventCountdown";
 import Hero from "@/lib/components/pages/home/Hero";
 
 import { createJSON_LD, createMetadata } from "@/lib/utils/createMetadata";
@@ -28,7 +27,6 @@ export default function Home() {
       <main className="max-w-full flex-col items-center md:-mt-15.5">
         <Hero />
         <Container className="mt-20 flex flex-col gap-12 lg:mt-24">
-          <EventCountdown />
           <Callout
             title="What is Ākēdo?"
             className="mb-8 scroll-mt-38"
