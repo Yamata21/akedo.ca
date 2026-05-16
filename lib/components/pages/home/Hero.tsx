@@ -68,7 +68,7 @@ export default function Hero() {
               quality={100}
               preload={true}
               className={
-                "hidden lg:block lg:translate-y-4/24 2xl:translate-y-4/24"
+                "hidden origin-center lg:block lg:-translate-x-8 lg:translate-y-4/24 lg:scale-[1.2] xl:scale-[1.3] 2xl:translate-y-4/24"
               }
               src={"/assets/mascot/haru-and-aki-hero.png"}
               alt=""
