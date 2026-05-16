@@ -34,7 +34,7 @@ export default function EventCountdown() {
   }, []);
 
   return (
-    <div className="z-10 w-full max-w-xl rounded-2xl border border-white/30 bg-[#342b5a]/85 p-3 text-white shadow-2xl shadow-black/30 backdrop-blur">
+    <div className="z-10 w-full max-w-none rounded-2xl border border-white/30 bg-[#342b5a]/85 p-3 text-white shadow-2xl shadow-black/30 backdrop-blur">
       <p className="mb-2 text-center text-xs font-semibold tracking-[0.18em] text-[#efd864] uppercase">
         Countdown to Ākēdo
       </p>

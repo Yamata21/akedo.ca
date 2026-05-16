@@ -20,7 +20,7 @@ export default function Hero() {
         >
           <div
             id="hero__genshiken-info"
-            className="flex flex-1 flex-col justify-center pt-24 lg:mt-0 lg:translate-y-0 lg:pt-10"
+            className="flex flex-1 flex-col justify-center pt-24 lg:mt-0 lg:basis-[44rem] lg:translate-y-0 lg:pt-10 xl:basis-[50rem]"
           >
             <h1 className="font-brand lg:leading-auto text-center text-6xl font-black text-white md:text-8xl lg:text-left xl:text-8xl">
               Ākēdo Festival
@@ -31,14 +31,16 @@ export default function Hero() {
             <p className="mt-4 text-center text-xs leading-relaxed font-medium text-white uppercase lg:text-left lg:text-lg xl:text-xl">
               University of Guelph, University Centre
               <br />
-              50 Stone Rd E, Guelph, ON N1G 2W1
+              <span className="lg:whitespace-nowrap">
+                50 Stone Rd E, Guelph, ON N1G 2W1
+              </span>
               <br />
               October 17th, 2026, 11AM - 7PM
             </p>
-            <div className="xl:w-10.5/12 mt-5 hidden lg:block">
+            <div className="mt-5 hidden w-full lg:block">
               <EventCountdown />
             </div>
-            <div className="xl:w-10.5/12 mt-4 hidden lg:block">
+            <div className="mt-4 hidden w-full lg:block">
               <CTA
                 href="https://www.zeffy.com/en-CA/ticketing/akedo-festival--2026"
                 className={
@@ -75,6 +77,9 @@ export default function Hero() {
             />
           </div>
         </Container>
+        <div className="mx-auto -mt-12 mb-10 w-full max-w-[75%] lg:hidden">
+          <EventCountdown />
+        </div>
       </div>
       <CTA
         href="https://www.zeffy.com/en-CA/ticketing/akedo-festival--2026"
