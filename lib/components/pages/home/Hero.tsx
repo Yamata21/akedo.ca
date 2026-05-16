@@ -16,7 +16,7 @@ export default function Hero() {
       <div className="bg-brand-white overflow-clip bg-[url('/assets/hero-bg.webp')] bg-cover bg-no-repeat lg:w-full">
         <Container
           extended
-          className="relative box-content flex min-h-[80vh] flex-col items-center justify-center md:box-border md:justify-between lg:min-h-[38rem] lg:flex-row xl:min-h-[42rem]"
+          className="relative box-content flex min-h-[80vh] flex-col items-center justify-center md:box-border md:justify-between lg:min-h-[34rem] lg:flex-row xl:min-h-[38rem]"
         >
           <div
             id="hero__genshiken-info"
@@ -51,7 +51,7 @@ export default function Hero() {
           </div>
           <div
             id="hero__genshiken-mascots--desktop"
-            className="flex w-[75%] flex-row items-center"
+            className="flex w-[75%] flex-row items-center justify-center"
           >
             <Image
               quality={100}
@@ -66,7 +66,7 @@ export default function Hero() {
               quality={100}
               preload={true}
               className={
-                "hidden lg:block lg:translate-y-4/24 2xl:translate-y-4/24"
+                "hidden w-auto object-contain lg:block lg:max-h-[34rem] lg:translate-y-8 xl:max-h-[38rem]"
               }
               src={"/assets/mascot/haru-and-aki-hero.png"}
               alt=""
