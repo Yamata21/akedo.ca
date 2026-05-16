@@ -16,11 +16,8 @@ export default function Hero() {
       <div className="bg-brand-white overflow-clip bg-[url('/assets/hero-bg.webp')] bg-cover bg-no-repeat lg:w-full">
         <Container
           extended
-          className="relative box-content flex h-[80vh] flex-col items-center justify-center md:box-border md:justify-between lg:flex-row"
+          className="relative box-content flex min-h-[88vh] flex-col items-center justify-center md:box-border md:justify-between lg:min-h-[44rem] lg:flex-row xl:min-h-[48rem]"
         >
-          <div className="absolute top-6 right-4 hidden lg:block xl:right-12">
-            <EventCountdown />
-          </div>
           <div
             id="hero__genshiken-info"
             className="flex flex-1 flex-col justify-center pt-24 lg:mt-0 lg:translate-y-0 lg:pt-0"
@@ -38,7 +35,10 @@ export default function Hero() {
               <br />
               October 17th, 2026, 11AM - 7PM
             </p>
-            <div className="xl:w-10.5/12 mt-12 hidden lg:block">
+            <div className="xl:w-10.5/12 mt-8 hidden lg:block">
+              <EventCountdown />
+            </div>
+            <div className="xl:w-10.5/12 mt-6 hidden lg:block">
               <CTA
                 href="https://www.zeffy.com/en-CA/ticketing/akedo-festival--2026"
                 className={
