@@ -6,7 +6,6 @@
  */
 
 import CTA from "@/lib/components/core/CTA";
-import EventCountdown from "@/lib/components/pages/home/EventCountdown";
 import Image from "next/image";
 import Container from "@/lib/components/core/Container";
 
@@ -35,7 +34,6 @@ export default function Hero() {
               <br />
               October 17th, 2026, 11AM - 7PM
             </p>
-            <EventCountdown />
             <div className="xl:w-10.5/12 mt-12 hidden lg:block">
               <CTA
                 href="https://www.zeffy.com/en-CA/ticketing/akedo-festival--2026"

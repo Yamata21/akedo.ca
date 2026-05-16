@@ -12,6 +12,7 @@ import Container from "@/lib/components/core/Container";
 import Heading from "@/lib/components/core/typography/Heading";
 // import EventCard from "@/lib/components/EventCard";
 import Maps from "@/lib/components/Maps";
+import EventCountdown from "@/lib/components/pages/home/EventCountdown";
 import Hero from "@/lib/components/pages/home/Hero";
 
 import { createJSON_LD, createMetadata } from "@/lib/utils/createMetadata";
@@ -27,6 +28,7 @@ export default function Home() {
       <main className="max-w-full flex-col items-center md:-mt-15.5">
         <Hero />
         <Container className="mt-20 flex flex-col gap-12 lg:mt-24">
+          <EventCountdown />
           <Callout
             title="What is Ākēdo?"
             className="mb-8 scroll-mt-38"
@@ -135,23 +137,15 @@ export default function Home() {
                   <p className="text-xl leading-relaxed font-bold lg:text-2xl">
                     <span className="text-brand-purple">
                       October 17th, 2026,
-                      <br className="hidden lg:block" />
-                      {" "}
-                      11AM - 7PM
-                      <br className="hidden lg:block" />
-                      {" "}
-                    </span>
-                    {" "}
+                      <br className="hidden lg:block" /> 11AM - 7PM
+                      <br className="hidden lg:block" />{" "}
+                    </span>{" "}
                     University of Guelph,
-                    <br className="hidden lg:block" />
-                    {" "}
-                    University Centre
+                    <br className="hidden lg:block" /> University Centre
                   </p>
                   <p className="italic lg:text-lg">
                     50 Stone Rd E, Guelph,
-                    <br className="hidden lg:block" />
-                    {" "}
-                    ON N1G 2W1
+                    <br className="hidden lg:block" /> ON N1G 2W1
                   </p>
                 </div>
                 <div className="absolute bottom-0 left-0 hidden min-w-full lg:block">
