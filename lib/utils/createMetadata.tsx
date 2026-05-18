@@ -7,6 +7,8 @@
 import { Url } from "jsonld/jsonld-spec";
 import { Metadata } from "next";
 
+const ogImageUrl = "https://akedofestival.ca/ogp.jpg?v=20260517";
+
 /**
  * Generates valid metadata and ogp data per page.
  * @returns {import('next').Metadata} Metadata to be used by `page.tsx` elements.
@@ -38,7 +40,7 @@ const createMetadata = ({ title }: createMetadataProps) => {
       siteName: "Ākēdo Festival",
       images: [
         {
-          url: "https://akedofestival.ca/ogp.jpg",
+          url: ogImageUrl,
         },
       ],
     },
@@ -49,7 +51,7 @@ const createMetadata = ({ title }: createMetadataProps) => {
       title: `Ākēdo Festival - ${title}`,
       description:
         "A University of Guelph anime convention celebrating anime, gaming, art, and pop culture.",
-      images: "https://akedofestival.ca/ogp.jpg",
+      images: ogImageUrl,
     },
   };
 
