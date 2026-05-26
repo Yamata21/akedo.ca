@@ -17,23 +17,15 @@ export const metadata = createMetadata({ title: "Participate" });
 const opportunities = [
   {
     title: "Artist Alley",
-    description:
-      "Showcase your illustrations, handmade work, prints, and fan creations to attendees throughout the festival.",
   },
   {
     title: "Stage Performances",
-    description:
-      "Bring your performance to the Ākēdo stage, from music and dance to showcases made for anime and pop culture fans.",
   },
   {
     title: "Activities",
-    description:
-      "Host an interactive experience, panel, workshop, game, or community activity as part of festival programming.",
   },
   {
     title: "Volunteer / Hiring",
-    description:
-      "Apply to help bring the festival to life through attendee support, operations, programming, and event-day roles.",
   },
 ];
 
@@ -72,7 +64,8 @@ export default function ParticipatePage() {
                     {opportunity.title}
                   </h2>
                   <p className="mt-4 text-base leading-relaxed md:text-lg">
-                    {opportunity.description}
+                    We&apos;re currently updating the details for this
+                    opportunity. Please check back soon.
                   </p>
                 </div>
                 <span className="border-brand-purple/30 text-brand-purple inline-flex w-fit items-center rounded-lg border px-5 py-3 font-semibold">
