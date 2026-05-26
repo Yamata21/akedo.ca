@@ -104,10 +104,10 @@ export default function EarlyBirdPopup() {
         <div className="px-6 py-6 sm:px-8">
           <div className="flex items-center gap-4">
             <p className="font-brand text-brand-purple text-6xl font-bold">
-              $5
+              $10
             </p>
             <p className="font-semibold text-black/75">
-              Off general admission
+              Lowest ticket price of the year
               <br />
               Until August 31, 2026
             </p>

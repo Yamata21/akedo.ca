@@ -5,243 +5,243 @@
 
 export const galleryImages = [
   {
-    alt: "Ākēdo Festival gallery photo 1",
-    src: "/assets/gallery/%40visualsbysuraj-20251101-DSC02335.jpg",
+    "alt": "Ākēdo Festival gallery photo 1",
+    "src": "/assets/gallery/%40visualsbysuraj-20251101-DSC02335.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 2",
-    src: "/assets/gallery/%40visualsbysuraj-20251101-DSC02415.jpg",
+    "alt": "Ākēdo Festival gallery photo 2",
+    "src": "/assets/gallery/%40visualsbysuraj-20251101-DSC02415.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 3",
-    src: "/assets/gallery/%40visualsbysuraj-20251101-DSC02464.jpg",
+    "alt": "Ākēdo Festival gallery photo 3",
+    "src": "/assets/gallery/%40visualsbysuraj-20251101-DSC02464.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 4",
-    src: "/assets/gallery/%40visualsbysuraj-20251101-DSC02491.jpg",
+    "alt": "Ākēdo Festival gallery photo 4",
+    "src": "/assets/gallery/%40visualsbysuraj-20251101-DSC02491.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 5",
-    src: "/assets/gallery/%40visualsbysuraj-20251101-DSC02615.jpg",
+    "alt": "Ākēdo Festival gallery photo 5",
+    "src": "/assets/gallery/%40visualsbysuraj-20251101-DSC02615.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 6",
-    src: "/assets/gallery/%40visualsbysuraj-20251101-DSC02720.jpg",
+    "alt": "Ākēdo Festival gallery photo 6",
+    "src": "/assets/gallery/%40visualsbysuraj-20251101-DSC02720.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 7",
-    src: "/assets/gallery/%40visualsbysuraj-20251101-DSC02727.jpg",
+    "alt": "Ākēdo Festival gallery photo 7",
+    "src": "/assets/gallery/%40visualsbysuraj-20251101-DSC02727.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 8",
-    src: "/assets/gallery/20251101_180115.jpg",
+    "alt": "Ākēdo Festival gallery photo 8",
+    "src": "/assets/gallery/20251101_180115.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 9",
-    src: "/assets/gallery/DSC01915.JPG",
+    "alt": "Ākēdo Festival gallery photo 9",
+    "src": "/assets/gallery/DSC01915.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 10",
-    src: "/assets/gallery/DSC01926.JPG",
+    "alt": "Ākēdo Festival gallery photo 10",
+    "src": "/assets/gallery/DSC01926.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 11",
-    src: "/assets/gallery/DSC02198.JPG",
+    "alt": "Ākēdo Festival gallery photo 11",
+    "src": "/assets/gallery/DSC02198.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 12",
-    src: "/assets/gallery/DSC03357.jpg",
+    "alt": "Ākēdo Festival gallery photo 12",
+    "src": "/assets/gallery/DSC03357.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 13",
-    src: "/assets/gallery/DSC03386.jpg",
+    "alt": "Ākēdo Festival gallery photo 13",
+    "src": "/assets/gallery/DSC03386.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 14",
-    src: "/assets/gallery/DSC03405.jpg",
+    "alt": "Ākēdo Festival gallery photo 14",
+    "src": "/assets/gallery/DSC03405.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 15",
-    src: "/assets/gallery/DSC03568.jpg",
+    "alt": "Ākēdo Festival gallery photo 15",
+    "src": "/assets/gallery/DSC03568.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 16",
-    src: "/assets/gallery/DSC03746.jpg",
+    "alt": "Ākēdo Festival gallery photo 16",
+    "src": "/assets/gallery/DSC03746.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 17",
-    src: "/assets/gallery/DSC03748.jpg",
+    "alt": "Ākēdo Festival gallery photo 17",
+    "src": "/assets/gallery/DSC03748.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 18",
-    src: "/assets/gallery/DSC03752.jpg",
+    "alt": "Ākēdo Festival gallery photo 18",
+    "src": "/assets/gallery/DSC03752.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 19",
-    src: "/assets/gallery/DSC03812.jpg",
+    "alt": "Ākēdo Festival gallery photo 19",
+    "src": "/assets/gallery/DSC03812.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 20",
-    src: "/assets/gallery/DSC03855.jpg",
+    "alt": "Ākēdo Festival gallery photo 20",
+    "src": "/assets/gallery/DSC03855.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 21",
-    src: "/assets/gallery/DSC03856.jpg",
+    "alt": "Ākēdo Festival gallery photo 21",
+    "src": "/assets/gallery/DSC03856.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 22",
-    src: "/assets/gallery/DSC03857.jpg",
+    "alt": "Ākēdo Festival gallery photo 22",
+    "src": "/assets/gallery/DSC03857.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 23",
-    src: "/assets/gallery/DSC03896.jpg",
+    "alt": "Ākēdo Festival gallery photo 23",
+    "src": "/assets/gallery/DSC03896.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 24",
-    src: "/assets/gallery/DSC03905.jpg",
+    "alt": "Ākēdo Festival gallery photo 24",
+    "src": "/assets/gallery/DSC03905.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 25",
-    src: "/assets/gallery/DSC03906.jpg",
+    "alt": "Ākēdo Festival gallery photo 25",
+    "src": "/assets/gallery/DSC03906.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 26",
-    src: "/assets/gallery/DSC07721.jpg",
+    "alt": "Ākēdo Festival gallery photo 26",
+    "src": "/assets/gallery/DSC07721.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 27",
-    src: "/assets/gallery/DSC07926.jpg",
+    "alt": "Ākēdo Festival gallery photo 27",
+    "src": "/assets/gallery/DSC07926.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 28",
-    src: "/assets/gallery/IMG_0019.jpg",
+    "alt": "Ākēdo Festival gallery photo 28",
+    "src": "/assets/gallery/IMG_0019.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 29",
-    src: "/assets/gallery/IMG_0048.JPG",
+    "alt": "Ākēdo Festival gallery photo 29",
+    "src": "/assets/gallery/IMG_0048.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 30",
-    src: "/assets/gallery/IMG_0049.JPG",
+    "alt": "Ākēdo Festival gallery photo 30",
+    "src": "/assets/gallery/IMG_0049.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 31",
-    src: "/assets/gallery/IMG_0056.JPG",
+    "alt": "Ākēdo Festival gallery photo 31",
+    "src": "/assets/gallery/IMG_0056.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 32",
-    src: "/assets/gallery/IMG_0089.jpg",
+    "alt": "Ākēdo Festival gallery photo 32",
+    "src": "/assets/gallery/IMG_0089.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 33",
-    src: "/assets/gallery/IMG_0102.jpg",
+    "alt": "Ākēdo Festival gallery photo 33",
+    "src": "/assets/gallery/IMG_0102.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 34",
-    src: "/assets/gallery/IMG_0115.jpg",
+    "alt": "Ākēdo Festival gallery photo 34",
+    "src": "/assets/gallery/IMG_0115.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 35",
-    src: "/assets/gallery/IMG_0119.JPG",
+    "alt": "Ākēdo Festival gallery photo 35",
+    "src": "/assets/gallery/IMG_0119.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 36",
-    src: "/assets/gallery/IMG_0122.jpg",
+    "alt": "Ākēdo Festival gallery photo 36",
+    "src": "/assets/gallery/IMG_0122.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 37",
-    src: "/assets/gallery/IMG_0178.jpg",
+    "alt": "Ākēdo Festival gallery photo 37",
+    "src": "/assets/gallery/IMG_0178.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 38",
-    src: "/assets/gallery/IMG_0193-Enhanced-NR.jpg",
+    "alt": "Ākēdo Festival gallery photo 38",
+    "src": "/assets/gallery/IMG_0193-Enhanced-NR.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 39",
-    src: "/assets/gallery/IMG_0275.jpg",
+    "alt": "Ākēdo Festival gallery photo 39",
+    "src": "/assets/gallery/IMG_0275.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 40",
-    src: "/assets/gallery/IMG_0298.jpg",
+    "alt": "Ākēdo Festival gallery photo 40",
+    "src": "/assets/gallery/IMG_0298.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 41",
-    src: "/assets/gallery/IMG_0308.jpg",
+    "alt": "Ākēdo Festival gallery photo 41",
+    "src": "/assets/gallery/IMG_0308.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 42",
-    src: "/assets/gallery/IMG_20240323_162206131.jpg",
+    "alt": "Ākēdo Festival gallery photo 42",
+    "src": "/assets/gallery/IMG_20240323_162206131.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 43",
-    src: "/assets/gallery/IMG_20241004_184018_514.jpg",
+    "alt": "Ākēdo Festival gallery photo 43",
+    "src": "/assets/gallery/IMG_20241004_184018_514.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 44",
-    src: "/assets/gallery/IMG_20241011_095257_098.jpg",
+    "alt": "Ākēdo Festival gallery photo 44",
+    "src": "/assets/gallery/IMG_20241011_095257_098.jpg"
   },
   {
-    alt: "Ākēdo Festival gallery photo 45",
-    src: "/assets/gallery/IMG_5832.JPG",
+    "alt": "Ākēdo Festival gallery photo 45",
+    "src": "/assets/gallery/IMG_5832.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 46",
-    src: "/assets/gallery/IMG_6649.JPG",
+    "alt": "Ākēdo Festival gallery photo 46",
+    "src": "/assets/gallery/IMG_6649.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 47",
-    src: "/assets/gallery/IMG_6650.JPG",
+    "alt": "Ākēdo Festival gallery photo 47",
+    "src": "/assets/gallery/IMG_6650.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 48",
-    src: "/assets/gallery/IMG_6656.JPG",
+    "alt": "Ākēdo Festival gallery photo 48",
+    "src": "/assets/gallery/IMG_6656.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 49",
-    src: "/assets/gallery/IMG_6657.JPG",
+    "alt": "Ākēdo Festival gallery photo 49",
+    "src": "/assets/gallery/IMG_6657.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 50",
-    src: "/assets/gallery/IMG_6727.JPG",
+    "alt": "Ākēdo Festival gallery photo 50",
+    "src": "/assets/gallery/IMG_6727.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 51",
-    src: "/assets/gallery/IMG_6799.JPG",
+    "alt": "Ākēdo Festival gallery photo 51",
+    "src": "/assets/gallery/IMG_6799.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 52",
-    src: "/assets/gallery/IMG_6808.JPG",
+    "alt": "Ākēdo Festival gallery photo 52",
+    "src": "/assets/gallery/IMG_6808.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 53",
-    src: "/assets/gallery/IMG_8542%20-%20Copy.JPG",
+    "alt": "Ākēdo Festival gallery photo 53",
+    "src": "/assets/gallery/IMG_8542%20-%20Copy.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 54",
-    src: "/assets/gallery/IMG_8738.JPG",
+    "alt": "Ākēdo Festival gallery photo 54",
+    "src": "/assets/gallery/IMG_8738.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 55",
-    src: "/assets/gallery/IMG_8789.JPG",
+    "alt": "Ākēdo Festival gallery photo 55",
+    "src": "/assets/gallery/IMG_8789.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 56",
-    src: "/assets/gallery/ZHU_4206.JPG",
+    "alt": "Ākēdo Festival gallery photo 56",
+    "src": "/assets/gallery/ZHU_4206.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 57",
-    src: "/assets/gallery/ZHU_4269.JPG",
+    "alt": "Ākēdo Festival gallery photo 57",
+    "src": "/assets/gallery/ZHU_4269.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 58",
-    src: "/assets/gallery/ZHU_4302.JPG",
+    "alt": "Ākēdo Festival gallery photo 58",
+    "src": "/assets/gallery/ZHU_4302.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 59",
-    src: "/assets/gallery/ZHU_4411.JPG",
+    "alt": "Ākēdo Festival gallery photo 59",
+    "src": "/assets/gallery/ZHU_4411.JPG"
   },
   {
-    alt: "Ākēdo Festival gallery photo 60",
-    src: "/assets/gallery/ZHU_4807.JPG",
-  },
+    "alt": "Ākēdo Festival gallery photo 60",
+    "src": "/assets/gallery/ZHU_4807.JPG"
+  }
 ] as const;

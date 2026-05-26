@@ -14,18 +14,46 @@ import { createMetadata } from "@/lib/utils/createMetadata";
 
 export const metadata = createMetadata({ title: "Participate" });
 
-const opportunities = [
+type Opportunity = {
+  title: string;
+  description: string;
+  image?: {
+    src: string;
+    width: number;
+    height: number;
+  };
+};
+
+const opportunities: Opportunity[] = [
   {
     title: "Artist Alley",
+    description:
+      "Apply as an artist selling handmade creations such as prints, stickers, keychains, plushies, crafts, or commissions, or as a vendor offering licensed products and retail merchandise.",
+    image: {
+      src: "/assets/participate/artist-alley.png",
+      height: 1350,
+      width: 1080,
+    },
   },
   {
     title: "Stage Performances",
+    description:
+      "We're currently updating the details for this opportunity. Please check back soon.",
+    image: {
+      src: "/assets/participate/stage-performance.png",
+      height: 3078,
+      width: 2671,
+    },
   },
   {
     title: "Activities",
+    description:
+      "We're currently updating the details for this opportunity. Please check back soon.",
   },
   {
     title: "Volunteer / Hiring",
+    description:
+      "We're currently updating the details for this opportunity. Please check back soon.",
   },
 ];
 
@@ -56,19 +84,35 @@ export default function ParticipatePage() {
           <section className="grid gap-4 md:grid-cols-2">
             {opportunities.map((opportunity) => (
               <article
-                className="border-brand-purple/25 flex flex-col justify-between gap-7 rounded-2xl border bg-[#d8c9f2] p-6 md:p-8"
+                className="border-brand-purple/25 relative flex min-h-[22rem] flex-col justify-between gap-7 overflow-hidden rounded-2xl border bg-[#d8c9f2] p-6 md:p-8"
                 key={opportunity.title}
               >
-                <div>
+                <div
+                  className={`relative z-10 ${
+                    opportunity.image ? "md:max-w-[54%]" : ""
+                  }`}
+                >
                   <h2 className="font-brand text-brand-purple text-3xl font-bold">
                     {opportunity.title}
                   </h2>
                   <p className="mt-4 text-base leading-relaxed md:text-lg">
-                    We&apos;re currently updating the details for this
-                    opportunity. Please check back soon.
+                    {opportunity.description}
                   </p>
                 </div>
-                <span className="border-brand-purple/30 text-brand-purple inline-flex w-fit items-center rounded-lg border px-5 py-3 font-semibold">
+                {opportunity.image ? (
+                  <Image
+                    alt=""
+                    className="pointer-events-none mx-auto mt-2 h-64 w-full object-contain object-bottom md:absolute md:-right-9 md:bottom-0 md:mt-0 md:h-[90%] md:w-[58%]"
+                    height={opportunity.image.height}
+                    src={opportunity.image.src}
+                    width={opportunity.image.width}
+                  />
+                ) : null}
+                <span
+                  className={`border-brand-purple/30 text-brand-purple relative z-10 inline-flex w-fit items-center rounded-lg border bg-[#d8c9f2]/90 px-5 py-3 font-semibold ${
+                    opportunity.image ? "md:max-w-[54%]" : ""
+                  }`}
+                >
                   Applications Coming Soon
                 </span>
               </article>
