@@ -95,6 +95,12 @@ export default function ParticipatePage() {
                 Reach out to our marketing team for more information.
               </p>
               <Link
+                className="text-brand-white mt-5 inline-flex items-center text-lg font-semibold hover:underline focus:underline"
+                href="mailto:marketing@akedo.ca?subject=Ākēdo%20Festival%20Sponsorship%20Inquiry"
+              >
+                marketing@akedo.ca
+              </Link>
+              <Link
                 className="bg-brand-orange hover:bg-brand-white focus:bg-brand-white hover:text-brand-indigo focus:text-brand-indigo mt-7 inline-flex items-center rounded-lg px-6 py-3 font-semibold text-white transition-colors"
                 href="mailto:marketing@akedo.ca?subject=Ākēdo%20Festival%20Sponsorship%20Inquiry"
               >
