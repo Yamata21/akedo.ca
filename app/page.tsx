@@ -12,6 +12,7 @@ import Container from "@/lib/components/core/Container";
 import Heading from "@/lib/components/core/typography/Heading";
 // import EventCard from "@/lib/components/EventCard";
 import Maps from "@/lib/components/Maps";
+import EarlyBirdPopup from "@/lib/components/pages/home/EarlyBirdPopup";
 import Hero from "@/lib/components/pages/home/Hero";
 
 import { createJSON_LD, createMetadata } from "@/lib/utils/createMetadata";
@@ -24,6 +25,7 @@ export default function Home() {
         text={"Genshiken Idol Performance Applications Open! – APPLY NOW"}
         href="https://docs.google.com/forms/d/e/1FAIpQLSesY8iDBZer1LPre7YbFjHEoM0QrcFwPQRfdQRc4Tpwn6OpUw/viewform?usp=publish-editor"
       /> */}
+      <EarlyBirdPopup />
       <main className="max-w-full flex-col items-center md:-mt-15.5">
         <Hero />
         <Container className="mt-20 flex flex-col gap-12 lg:mt-24">
