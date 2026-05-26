@@ -90,15 +90,13 @@ export default function EarlyBirdPopup() {
           />
           <div className="relative max-w-[70%]">
             <p className="text-brand-white text-xs font-bold uppercase">
-              Limited Time Offer
+              Early Bird Tickets
             </p>
             <h2
               className="font-brand mt-2 text-4xl leading-tight font-bold"
               id="early-bird-title"
             >
-              {saleIsActive
-                ? "Early Bird Tickets Are On Sale"
-                : "Early Bird Tickets Open June 1"}
+              Limited Time Offer
             </h2>
           </div>
         </div>
@@ -106,12 +104,12 @@ export default function EarlyBirdPopup() {
         <div className="px-6 py-6 sm:px-8">
           <div className="flex items-center gap-4">
             <p className="font-brand text-brand-purple text-6xl font-bold">
-              $10
+              $5
             </p>
             <p className="font-semibold text-black/75">
-              June 1 - August 31, 2026
+              Off general admission
               <br />
-              Lowest ticket price of the year
+              Until August 31, 2026
             </p>
           </div>
           <p className="mt-4 text-black/70">
@@ -124,7 +122,9 @@ export default function EarlyBirdPopup() {
             onClick={closePopup}
             target="_blank"
           >
-            {saleIsActive ? "Buy Early Bird Tickets" : "View Tickets"}
+            {saleIsActive
+              ? "Buy Early Bird Tickets"
+              : "View Early Bird Tickets"}
             <i className="bi bi-arrow-right ml-2" />
           </Link>
         </div>
