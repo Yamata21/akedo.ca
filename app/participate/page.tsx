@@ -21,6 +21,8 @@ type Opportunity = {
     src: string;
     width: number;
     height: number;
+    isWide?: boolean;
+    fadeLeft?: boolean;
   };
 };
 
@@ -41,8 +43,10 @@ const opportunities: Opportunity[] = [
       "We're currently updating the details for this opportunity. Please check back soon.",
     image: {
       src: "/assets/participate/stage-performance.png",
-      height: 3078,
-      width: 2671,
+      height: 2793,
+      width: 4832,
+      isWide: true,
+      fadeLeft: true,
     },
   },
   {
@@ -100,13 +104,29 @@ export default function ParticipatePage() {
                   </p>
                 </div>
                 {opportunity.image ? (
-                  <Image
-                    alt=""
-                    className="pointer-events-none mx-auto mt-2 h-64 w-full object-contain object-bottom md:absolute md:-right-9 md:bottom-0 md:mt-0 md:h-[90%] md:w-[58%]"
-                    height={opportunity.image.height}
-                    src={opportunity.image.src}
-                    width={opportunity.image.width}
-                  />
+                  <>
+                    <Image
+                      alt=""
+                      className={`pointer-events-none mx-auto mt-2 h-64 w-full object-contain object-bottom md:absolute md:bottom-0 md:mt-0 ${
+                        opportunity.image.isWide
+                          ? "md:-right-10 md:h-[94%] md:w-[78%]"
+                          : "md:-right-9 md:h-[90%] md:w-[58%]"
+                      }`}
+                      height={opportunity.image.height}
+                      src={opportunity.image.src}
+                      width={opportunity.image.width}
+                    />
+                    {opportunity.image.fadeLeft ? (
+                      <div
+                        aria-hidden="true"
+                        className="pointer-events-none absolute inset-y-0 left-0 z-[1] hidden w-[62%] md:block"
+                        style={{
+                          background:
+                            "linear-gradient(to right, #d8c9f2 0%, rgba(216, 201, 242, 0.96) 60%, rgba(216, 201, 242, 0) 100%)",
+                        }}
+                      />
+                    ) : null}
+                  </>
                 ) : null}
                 <span
                   className={`border-brand-purple/30 text-brand-purple relative z-10 inline-flex w-fit items-center rounded-lg border bg-[#d8c9f2]/90 px-5 py-3 font-semibold ${
