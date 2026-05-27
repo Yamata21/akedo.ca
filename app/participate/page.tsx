@@ -110,17 +110,29 @@ export default function ParticipatePage() {
                 </div>
                 {opportunity.image ? (
                   <>
-                    <Image
-                      alt=""
-                      className={`pointer-events-none mx-auto mt-2 h-64 w-full object-contain object-bottom md:absolute md:bottom-0 md:mt-0 ${
+                    <div
+                      className={`pointer-events-none relative mx-auto mt-2 h-64 w-full md:absolute md:bottom-0 md:mt-0 ${
                         opportunity.image.isWide
                           ? "md:-right-20 md:h-[104%] md:w-[88%] lg:-right-24 lg:h-[106%] lg:w-[92%]"
                           : "md:-right-9 md:h-[90%] md:w-[58%]"
                       }`}
-                      height={opportunity.image.height}
-                      src={opportunity.image.src}
-                      width={opportunity.image.width}
-                    />
+                    >
+                      <Image
+                        alt=""
+                        className="h-full w-full object-contain object-bottom"
+                        height={opportunity.image.height}
+                        src={opportunity.image.src}
+                        width={opportunity.image.width}
+                      />
+                      <div
+                        aria-hidden="true"
+                        className="absolute inset-x-0 bottom-0 h-16 md:hidden"
+                        style={{
+                          background:
+                            "linear-gradient(to bottom, transparent, #d8c9f2)",
+                        }}
+                      />
+                    </div>
                     {opportunity.image.fadeLeft ? (
                       <div
                         aria-hidden="true"
@@ -144,10 +156,10 @@ export default function ParticipatePage() {
             ))}
           </section>
 
-          <section className="bg-brand-indigo relative overflow-hidden rounded-2xl px-6 py-8 text-white md:px-10 md:py-10">
+          <section className="bg-brand-indigo relative rounded-2xl px-6 py-8 text-white md:px-10 md:py-10">
             <Image
               alt=""
-              className="absolute -right-10 -bottom-20 hidden h-[138%] w-[42%] object-contain object-right-bottom opacity-95 md:block"
+              className="pointer-events-none absolute -right-10 -bottom-20 z-10 hidden h-[138%] w-[42%] object-contain object-right-bottom opacity-95 md:block"
               height={3530}
               src="/assets/participate/sponsor.png"
               width={2404}
