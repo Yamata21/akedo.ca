@@ -109,7 +109,7 @@ export default function ParticipatePage() {
                       alt=""
                       className={`pointer-events-none mx-auto mt-2 h-64 w-full object-contain object-bottom md:absolute md:bottom-0 md:mt-0 ${
                         opportunity.image.isWide
-                          ? "md:-right-10 md:h-[94%] md:w-[78%]"
+                          ? "md:-right-20 md:h-[104%] md:w-[88%] lg:-right-24 lg:h-[106%] lg:w-[92%]"
                           : "md:-right-9 md:h-[90%] md:w-[58%]"
                       }`}
                       height={opportunity.image.height}
