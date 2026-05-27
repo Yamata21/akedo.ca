@@ -58,6 +58,11 @@ const opportunities: Opportunity[] = [
     title: "Volunteer / Hiring",
     description:
       "We're currently updating the details for this opportunity. Please check back soon.",
+    image: {
+      src: "/assets/participate/volunteer-hiring.png",
+      height: 1350,
+      width: 1080,
+    },
   },
 ];
 
@@ -142,12 +147,12 @@ export default function ParticipatePage() {
           <section className="bg-brand-indigo relative overflow-hidden rounded-2xl px-6 py-8 text-white md:px-10 md:py-10">
             <Image
               alt=""
-              className="absolute -right-10 -bottom-12 hidden h-48 w-48 object-contain opacity-95 sm:block"
-              height={2550}
-              src="/assets/mascot/chibi/kiko_kick.png"
-              width={3300}
+              className="absolute -right-10 -bottom-20 hidden h-[138%] w-[42%] object-contain object-right-bottom opacity-95 md:block"
+              height={3530}
+              src="/assets/participate/sponsor.png"
+              width={2404}
             />
-            <div className="relative max-w-3xl">
+            <div className="relative z-10 md:max-w-[62%]">
               <p className="text-brand-white text-sm font-semibold uppercase">
                 Sponsors
               </p>
