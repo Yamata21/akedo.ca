@@ -136,7 +136,7 @@ export default function Home() {
                 </p> */}
                   <p className="text-xl leading-relaxed font-bold lg:text-2xl">
                     <span className="text-brand-purple">
-                      October 17th, 2026,
+                      November 7th, 2026,
                       <br className="hidden lg:block" /> 11AM - 7PM
                       <br className="hidden lg:block" />{" "}
                     </span>{" "}
@@ -242,8 +242,8 @@ export default function Home() {
         image: "https://akedofestival.ca/ogp.jpg",
         url: "https://akedofestival.ca/",
         typeSpecific: {
-          startDate: "2026-10-17T11:00-04:00",
-          endDate: "2026-10-17T19:00-04:00",
+          startDate: "2026-11-07T11:00-05:00",
+          endDate: "2026-11-07T19:00-05:00",
           eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
           eventStatus: "https://schema.org/EventScheduled",
           location: {

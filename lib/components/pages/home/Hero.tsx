@@ -35,7 +35,7 @@ export default function Hero() {
                 50 Stone Rd E, Guelph, ON N1G 2W1
               </span>
               <br />
-              October 17th, 2026, 11AM - 7PM
+              November 7th, 2026, 11AM - 7PM
             </p>
             <div className="mt-5 hidden w-full lg:block">
               <EventCountdown />

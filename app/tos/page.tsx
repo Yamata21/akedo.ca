@@ -54,7 +54,7 @@ const policySections: {
   {
     title: "Consent to Photography",
     items: [
-      "All participants of the Ākēdo Festival automatically consent to being photographed or recorded by the official event staff for promotional and marketing purposes. Media captured by staff may be used solely for Ākēdo Festival purposes. This consent does not extend to personal use by staff, including portfolios or personal social media pages, for which explicit consent from the individual(s) depicted is required. If you wish to opt out of official photography, please contact the organizing team via email by October 3rd.",
+      "All participants of the Ākēdo Festival automatically consent to being photographed or recorded by the official event staff for promotional and marketing purposes. Media captured by staff may be used solely for Ākēdo Festival purposes. This consent does not extend to personal use by staff, including portfolios or personal social media pages, for which explicit consent from the individual(s) depicted is required. If you wish to opt out of official photography, please contact the organizing team via email by October 24th.",
       "All attendees, guests, media, sponsors, and others must obtain clear verbal consent prior to taking photographs or videos of others. Agreement to one photo or interaction does not imply ongoing or repeated permission.",
       "Names or logos of associated companies, groups, or organisations may appear in photographs.",
     ],

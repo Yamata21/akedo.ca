@@ -9,7 +9,7 @@
 
 import { useEffect, useState } from "react";
 
-const eventStart = new Date("2026-10-17T11:00:00-04:00").getTime();
+const eventStart = new Date("2026-11-07T11:00:00-05:00").getTime();
 
 function getTimeLeft() {
   const difference = Math.max(0, eventStart - Date.now());

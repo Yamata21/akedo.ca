@@ -113,7 +113,7 @@ export default function EarlyBirdPopup() {
             </p>
           </div>
           <p className="mt-4 text-black/70">
-            Join us at the University of Guelph on October 17 for Ākēdo Festival
+            Join us at the University of Guelph on November 7 for Ākēdo Festival
             2026.
           </p>
           <Link
