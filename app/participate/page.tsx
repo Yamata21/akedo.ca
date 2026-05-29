@@ -50,9 +50,14 @@ const opportunities: Opportunity[] = [
     },
   },
   {
-    title: "Activities",
+    title: "Photographer",
     description:
       "We're currently updating the details for this opportunity. Please check back soon.",
+    image: {
+      src: "/assets/mascot/chibi/kiko_kick.png",
+      height: 2550,
+      width: 3300,
+    },
   },
   {
     title: "Volunteer / Hiring",
@@ -84,7 +89,7 @@ export default function ParticipatePage() {
               Participate
             </Heading>
             <p className="mt-5 text-lg leading-relaxed text-black/75 md:text-xl">
-              Be part of Ākēdo Festival as an artist, performer, activity host,
+              Be part of Ākēdo Festival as an artist, performer, photographer,
               volunteer, or sponsor. Applications will be posted here as they
               become available.
             </p>
