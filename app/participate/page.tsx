@@ -14,6 +14,8 @@ import { createMetadata } from "@/lib/utils/createMetadata";
 
 export const metadata = createMetadata({ title: "Participate" });
 
+const ticketUrl = "https://www.zeffy.com/en-CA/ticketing/akedo-festival--2026";
+
 type Opportunity = {
   title: string;
   description: string;
@@ -54,7 +56,7 @@ const opportunities: Opportunity[] = [
     description:
       "We're currently updating the details for this opportunity. Please check back soon.",
     image: {
-      src: "/assets/mascot/chibi/kiko_kick.png",
+      src: "/assets/participate/photographer.png",
       height: 2550,
       width: 3300,
     },
@@ -79,9 +81,9 @@ export default function ParticipatePage() {
           <Image
             alt=""
             className="absolute -top-10 right-0 hidden h-40 w-40 object-contain md:block"
-            height={3048}
-            src="/assets/spraycan.png"
-            width={2995}
+            height={1974}
+            src="/assets/participate/participationicon.png"
+            width={1644}
           />
 
           <header className="max-w-3xl">
@@ -93,6 +95,15 @@ export default function ParticipatePage() {
               volunteer, or sponsor. Applications will be posted here as they
               become available.
             </p>
+            <Link
+              className="bg-brand-orange hover:bg-brand-purple focus:bg-brand-purple mt-7 inline-flex w-fit items-center rounded-lg px-6 py-3 font-semibold text-white transition-colors"
+              href={ticketUrl}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Buy Tickets
+              <i className="bi bi-arrow-right ml-2" />
+            </Link>
           </header>
 
           <section className="grid gap-4 md:grid-cols-2">

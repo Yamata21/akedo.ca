@@ -7,7 +7,7 @@
 import { Url } from "jsonld/jsonld-spec";
 import { Metadata } from "next";
 
-const ogImageUrl = "https://akedofestival.ca/ogp.jpg?v=20260517-v2";
+const ogImageUrl = "https://akedofestival.ca/ogp.jpg?v=20260530-v1";
 
 /**
  * Generates valid metadata and ogp data per page.
