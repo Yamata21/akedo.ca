@@ -80,7 +80,7 @@ export default function ParticipatePage() {
         <div className="relative flex flex-col gap-12">
           <Image
             alt=""
-            className="absolute -top-10 right-0 hidden h-40 w-40 object-contain md:block"
+            className="absolute -top-16 right-0 hidden h-72 w-60 object-contain md:block lg:h-80 lg:w-68"
             height={1974}
             src="/assets/participate/participationicon.png"
             width={1644}
