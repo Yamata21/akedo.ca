@@ -10,6 +10,7 @@ import Link from "next/link";
 
 import Container from "@/lib/components/core/Container";
 import Heading from "@/lib/components/core/typography/Heading";
+import NewsletterSignup from "@/lib/components/pages/participate/NewsletterSignup";
 import { createMetadata } from "@/lib/utils/createMetadata";
 
 export const metadata = createMetadata({ title: "Participate" });
@@ -80,7 +81,7 @@ export default function ParticipatePage() {
         <div className="relative flex flex-col gap-12">
           <Image
             alt=""
-            className="absolute -top-16 right-0 hidden h-72 w-60 object-contain md:block lg:h-80 lg:w-68"
+            className="absolute -top-16 right-0 hidden h-72 w-60 object-contain md:block lg:h-80 lg:w-[17rem]"
             height={1974}
             src="/assets/participate/participationicon.png"
             width={1644}
@@ -171,6 +172,8 @@ export default function ParticipatePage() {
               </article>
             ))}
           </section>
+
+          <NewsletterSignup />
 
           <section className="bg-brand-indigo relative rounded-2xl px-6 py-8 text-white md:px-10 md:py-10">
             <Image
