@@ -97,7 +97,7 @@ export default function NewsletterSignup() {
           <div className="border-brand-purple/20 mt-5 overflow-hidden rounded-xl border bg-white">
             <iframe
               allowTransparency
-              className="h-64 w-full border-0 md:h-72"
+              className="block h-[22rem] w-full border-0 md:h-[16.5rem]"
               key={selectedNewsletter.src}
               src={selectedNewsletter.src}
               title={`${selectedNewsletter.label} newsletter signup form`}
