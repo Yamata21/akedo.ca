@@ -261,7 +261,7 @@ export default function ParticipatePage() {
             </p>
           </section>
 
-          <section className="grid gap-4 xl:grid-cols-2">
+          <section className="grid gap-4 lg:grid-cols-2">
             {applicationOpportunities.map((opportunity) => (
               <OpportunityCard
                 key={opportunity.title}
@@ -284,7 +284,7 @@ export default function ParticipatePage() {
             </p>
           </section>
 
-          <section className="grid gap-4 xl:grid-cols-2">
+          <section className="grid gap-4 lg:grid-cols-2">
             {comingSoonOpportunities.map((opportunity) => (
               <OpportunityCard
                 key={opportunity.title}
