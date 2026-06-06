@@ -122,7 +122,7 @@ function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
       key={opportunity.title}
     >
       <div
-        className={`relative z-10 ${opportunity.image ? "lg:max-w-[54%]" : ""}`}
+        className={`relative z-10 ${opportunity.image ? "2xl:max-w-[54%]" : ""}`}
       >
         <h2 className="font-brand text-brand-purple text-3xl font-bold">
           {opportunity.title}
@@ -134,10 +134,10 @@ function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
       {opportunity.image ? (
         <>
           <div
-            className={`pointer-events-none relative mx-auto mt-2 h-64 w-full lg:absolute lg:bottom-0 lg:mt-0 ${
+            className={`pointer-events-none relative mx-auto mt-2 h-64 w-full 2xl:absolute 2xl:bottom-0 2xl:mt-0 ${
               opportunity.image.isWide
-                ? "lg:-right-24 lg:h-[106%] lg:w-[92%]"
-                : "lg:-right-9 lg:h-[90%] lg:w-[58%]"
+                ? "2xl:-right-24 2xl:h-[106%] 2xl:w-[92%]"
+                : "2xl:-right-9 2xl:h-[90%] 2xl:w-[58%]"
             }`}
           >
             <Image
@@ -149,7 +149,7 @@ function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
             />
             <div
               aria-hidden="true"
-              className="absolute inset-x-0 bottom-0 h-16 md:hidden"
+              className="absolute inset-x-0 bottom-0 h-16 2xl:hidden"
               style={{
                 background: "linear-gradient(to bottom, transparent, #d8c9f2)",
               }}
@@ -158,7 +158,7 @@ function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
           {opportunity.image.fadeLeft ? (
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-y-0 left-0 z-[1] hidden w-[62%] lg:block"
+              className="pointer-events-none absolute inset-y-0 left-0 z-[1] hidden w-[62%] 2xl:block"
               style={{
                 background:
                   "linear-gradient(to right, #d8c9f2 0%, rgba(216, 201, 242, 0.96) 60%, rgba(216, 201, 242, 0) 100%)",
@@ -170,7 +170,7 @@ function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
       {opportunity.applicationLinks ? (
         <div
           className={`relative z-10 flex w-fit flex-col gap-2 ${
-            opportunity.image ? "lg:max-w-[54%]" : ""
+            opportunity.image ? "2xl:max-w-[54%]" : ""
           }`}
         >
           {opportunity.applicationLinks.map((link) => (
@@ -189,7 +189,7 @@ function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
       ) : (
         <span
           className={`border-brand-purple/30 text-brand-purple relative z-10 inline-flex w-fit items-center rounded-lg border bg-[#d8c9f2]/90 px-5 py-3 font-semibold ${
-            opportunity.image ? "lg:max-w-[54%]" : ""
+            opportunity.image ? "2xl:max-w-[54%]" : ""
           }`}
         >
           Applications Coming Soon
@@ -261,7 +261,7 @@ export default function ParticipatePage() {
             </p>
           </section>
 
-          <section className="grid gap-4 lg:grid-cols-2">
+          <section className="grid gap-4 2xl:grid-cols-2">
             {applicationOpportunities.map((opportunity) => (
               <OpportunityCard
                 key={opportunity.title}
@@ -284,7 +284,7 @@ export default function ParticipatePage() {
             </p>
           </section>
 
-          <section className="grid gap-4 lg:grid-cols-2">
+          <section className="grid gap-4 2xl:grid-cols-2">
             {comingSoonOpportunities.map((opportunity) => (
               <OpportunityCard
                 key={opportunity.title}
