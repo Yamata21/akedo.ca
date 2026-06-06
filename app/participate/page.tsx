@@ -122,7 +122,7 @@ function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
       key={opportunity.title}
     >
       <div
-        className={`relative z-10 ${opportunity.image ? "2xl:max-w-[54%]" : ""}`}
+        className={`relative z-10 ${opportunity.image ? "xl:max-w-[68%]" : ""}`}
       >
         <h2 className="font-brand text-brand-purple text-3xl font-bold">
           {opportunity.title}
@@ -134,10 +134,10 @@ function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
       {opportunity.image ? (
         <>
           <div
-            className={`pointer-events-none relative mx-auto mt-2 h-64 w-full 2xl:absolute 2xl:bottom-0 2xl:mt-0 ${
+            className={`pointer-events-none relative mx-auto mt-2 h-64 w-full xl:absolute xl:bottom-0 xl:mt-0 ${
               opportunity.image.isWide
-                ? "2xl:-right-24 2xl:h-[106%] 2xl:w-[92%]"
-                : "2xl:-right-9 2xl:h-[90%] 2xl:w-[58%]"
+                ? "xl:-right-20 xl:h-[98%] xl:w-[78%]"
+                : "xl:-right-7 xl:h-[74%] xl:w-[44%]"
             }`}
           >
             <Image
@@ -149,7 +149,7 @@ function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
             />
             <div
               aria-hidden="true"
-              className="absolute inset-x-0 bottom-0 h-16 2xl:hidden"
+              className="absolute inset-x-0 bottom-0 h-16 xl:hidden"
               style={{
                 background: "linear-gradient(to bottom, transparent, #d8c9f2)",
               }}
@@ -158,7 +158,7 @@ function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
           {opportunity.image.fadeLeft ? (
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-y-0 left-0 z-[1] hidden w-[62%] 2xl:block"
+              className="pointer-events-none absolute inset-y-0 left-0 z-[1] hidden w-[62%] xl:block"
               style={{
                 background:
                   "linear-gradient(to right, #d8c9f2 0%, rgba(216, 201, 242, 0.96) 60%, rgba(216, 201, 242, 0) 100%)",
@@ -170,7 +170,7 @@ function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
       {opportunity.applicationLinks ? (
         <div
           className={`relative z-10 flex w-fit flex-col gap-2 ${
-            opportunity.image ? "2xl:max-w-[54%]" : ""
+            opportunity.image ? "xl:max-w-[56%]" : ""
           }`}
         >
           {opportunity.applicationLinks.map((link) => (
@@ -189,7 +189,7 @@ function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
       ) : (
         <span
           className={`border-brand-purple/30 text-brand-purple relative z-10 inline-flex w-fit items-center rounded-lg border bg-[#d8c9f2]/90 px-5 py-3 font-semibold ${
-            opportunity.image ? "2xl:max-w-[54%]" : ""
+            opportunity.image ? "xl:max-w-[56%]" : ""
           }`}
         >
           Applications Coming Soon
@@ -202,7 +202,7 @@ function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
 export default function ParticipatePage() {
   return (
     <main className="bg-white py-24 md:py-32">
-      <Container className="max-w-6xl">
+      <Container className="max-w-7xl">
         <div className="relative flex flex-col gap-12">
           <div className="grid items-start gap-8 md:grid-cols-[minmax(0,1fr)_14rem] lg:grid-cols-[minmax(0,1fr)_17rem]">
             <header className="max-w-3xl">
@@ -261,7 +261,7 @@ export default function ParticipatePage() {
             </p>
           </section>
 
-          <section className="grid gap-4 2xl:grid-cols-2">
+          <section className="grid gap-4 xl:grid-cols-2">
             {applicationOpportunities.map((opportunity) => (
               <OpportunityCard
                 key={opportunity.title}
@@ -284,7 +284,7 @@ export default function ParticipatePage() {
             </p>
           </section>
 
-          <section className="grid gap-4 2xl:grid-cols-2">
+          <section className="grid gap-4 xl:grid-cols-2">
             {comingSoonOpportunities.map((opportunity) => (
               <OpportunityCard
                 key={opportunity.title}
