@@ -69,9 +69,9 @@ const opportunities: Opportunity[] = [
       },
     ],
     image: {
-      src: "/assets/participate/artist-alley.png",
-      height: 1350,
-      width: 1080,
+      src: "/assets/participate/vendor-hall.png",
+      height: 2000,
+      width: 2000,
     },
   },
   {
@@ -108,6 +108,97 @@ const opportunities: Opportunity[] = [
   },
 ];
 
+const applicationOpportunities = opportunities.filter(
+  (opportunity) => opportunity.applicationLinks,
+);
+const comingSoonOpportunities = opportunities.filter(
+  (opportunity) => !opportunity.applicationLinks,
+);
+
+function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
+  return (
+    <article
+      className="border-brand-purple/25 relative flex min-h-[22rem] flex-col justify-between gap-7 overflow-hidden rounded-2xl border bg-[#d8c9f2] p-6 md:p-8"
+      key={opportunity.title}
+    >
+      <div
+        className={`relative z-10 ${opportunity.image ? "md:max-w-[54%]" : ""}`}
+      >
+        <h2 className="font-brand text-brand-purple text-3xl font-bold">
+          {opportunity.title}
+        </h2>
+        <p className="mt-4 text-base leading-relaxed md:text-lg">
+          {opportunity.description}
+        </p>
+      </div>
+      {opportunity.image ? (
+        <>
+          <div
+            className={`pointer-events-none relative mx-auto mt-2 h-64 w-full md:absolute md:bottom-0 md:mt-0 ${
+              opportunity.image.isWide
+                ? "md:-right-20 md:h-[104%] md:w-[88%] lg:-right-24 lg:h-[106%] lg:w-[92%]"
+                : "md:-right-9 md:h-[90%] md:w-[58%]"
+            }`}
+          >
+            <Image
+              alt=""
+              className="h-full w-full object-contain object-bottom"
+              height={opportunity.image.height}
+              src={opportunity.image.src}
+              width={opportunity.image.width}
+            />
+            <div
+              aria-hidden="true"
+              className="absolute inset-x-0 bottom-0 h-16 md:hidden"
+              style={{
+                background: "linear-gradient(to bottom, transparent, #d8c9f2)",
+              }}
+            />
+          </div>
+          {opportunity.image.fadeLeft ? (
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-y-0 left-0 z-[1] hidden w-[62%] md:block"
+              style={{
+                background:
+                  "linear-gradient(to right, #d8c9f2 0%, rgba(216, 201, 242, 0.96) 60%, rgba(216, 201, 242, 0) 100%)",
+              }}
+            />
+          ) : null}
+        </>
+      ) : null}
+      {opportunity.applicationLinks ? (
+        <div
+          className={`relative z-10 flex w-fit flex-col gap-2 ${
+            opportunity.image ? "md:max-w-[54%]" : ""
+          }`}
+        >
+          {opportunity.applicationLinks.map((link) => (
+            <Link
+              className="bg-brand-orange hover:bg-brand-purple focus:bg-brand-purple rounded-lg px-5 py-3 text-center font-semibold text-white transition-colors"
+              href={link.href}
+              key={link.href}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {link.label}
+              <i className="bi bi-arrow-right ml-2" />
+            </Link>
+          ))}
+        </div>
+      ) : (
+        <span
+          className={`border-brand-purple/30 text-brand-purple relative z-10 inline-flex w-fit items-center rounded-lg border bg-[#d8c9f2]/90 px-5 py-3 font-semibold ${
+            opportunity.image ? "md:max-w-[54%]" : ""
+          }`}
+        >
+          Applications Coming Soon
+        </span>
+      )}
+    </article>
+  );
+}
+
 export default function ParticipatePage() {
   return (
     <main className="bg-white py-24 md:py-32">
@@ -143,18 +234,18 @@ export default function ParticipatePage() {
 
           <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
             <p className="text-brand-orange text-sm font-bold uppercase">
-              Artist Alley & Vendor Hall Applications
+              Apply for Ākēdo 2026
             </p>
             <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
-              Apply for Ākēdo 2026
+              Artist Alley & Vendor Hall Applications
             </h2>
             <div className="mt-4 grid gap-4 text-base leading-relaxed text-black/75 md:grid-cols-2 md:text-lg">
               <p>
                 Independent artists and businesses are invited to apply to the
                 Ākēdo Artist Alley & Vendor Hall. Applicants may apply for the
                 Ākēdo Pop-Up Event on September 23, 2026 from 12:00 PM to 5:00
-                PM, Ākēdo Festival on November 7, 2026 from 11:00 AM to 7:00
-                PM, or both events.
+                PM, Ākēdo Festival on November 7, 2026 from 11:00 AM to 7:00 PM,
+                or both events.
               </p>
               <p>
                 Applicants must apply under one category only: Artist or Vendor.
@@ -169,89 +260,34 @@ export default function ParticipatePage() {
           </section>
 
           <section className="grid gap-4 md:grid-cols-2">
-            {opportunities.map((opportunity) => (
-              <article
-                className="border-brand-purple/25 relative flex min-h-[22rem] flex-col justify-between gap-7 overflow-hidden rounded-2xl border bg-[#d8c9f2] p-6 md:p-8"
+            {applicationOpportunities.map((opportunity) => (
+              <OpportunityCard
                 key={opportunity.title}
-              >
-                <div
-                  className={`relative z-10 ${
-                    opportunity.image ? "md:max-w-[54%]" : ""
-                  }`}
-                >
-                  <h2 className="font-brand text-brand-purple text-3xl font-bold">
-                    {opportunity.title}
-                  </h2>
-                  <p className="mt-4 text-base leading-relaxed md:text-lg">
-                    {opportunity.description}
-                  </p>
-                </div>
-                {opportunity.image ? (
-                  <>
-                    <div
-                      className={`pointer-events-none relative mx-auto mt-2 h-64 w-full md:absolute md:bottom-0 md:mt-0 ${
-                        opportunity.image.isWide
-                          ? "md:-right-20 md:h-[104%] md:w-[88%] lg:-right-24 lg:h-[106%] lg:w-[92%]"
-                          : "md:-right-9 md:h-[90%] md:w-[58%]"
-                      }`}
-                    >
-                      <Image
-                        alt=""
-                        className="h-full w-full object-contain object-bottom"
-                        height={opportunity.image.height}
-                        src={opportunity.image.src}
-                        width={opportunity.image.width}
-                      />
-                      <div
-                        aria-hidden="true"
-                        className="absolute inset-x-0 bottom-0 h-16 md:hidden"
-                        style={{
-                          background:
-                            "linear-gradient(to bottom, transparent, #d8c9f2)",
-                        }}
-                      />
-                    </div>
-                    {opportunity.image.fadeLeft ? (
-                      <div
-                        aria-hidden="true"
-                        className="pointer-events-none absolute inset-y-0 left-0 z-[1] hidden w-[62%] md:block"
-                        style={{
-                          background:
-                            "linear-gradient(to right, #d8c9f2 0%, rgba(216, 201, 242, 0.96) 60%, rgba(216, 201, 242, 0) 100%)",
-                        }}
-                      />
-                    ) : null}
-                  </>
-                ) : null}
-                {opportunity.applicationLinks ? (
-                  <div
-                    className={`relative z-10 flex w-fit flex-col gap-2 ${
-                      opportunity.image ? "md:max-w-[54%]" : ""
-                    }`}
-                  >
-                    {opportunity.applicationLinks.map((link) => (
-                      <Link
-                        className="bg-brand-orange hover:bg-brand-purple focus:bg-brand-purple rounded-lg px-5 py-3 text-center font-semibold text-white transition-colors"
-                        href={link.href}
-                        key={link.href}
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        {link.label}
-                        <i className="bi bi-arrow-right ml-2" />
-                      </Link>
-                    ))}
-                  </div>
-                ) : (
-                  <span
-                    className={`border-brand-purple/30 text-brand-purple relative z-10 inline-flex w-fit items-center rounded-lg border bg-[#d8c9f2]/90 px-5 py-3 font-semibold ${
-                      opportunity.image ? "md:max-w-[54%]" : ""
-                    }`}
-                  >
-                    Applications Coming Soon
-                  </span>
-                )}
-              </article>
+                opportunity={opportunity}
+              />
+            ))}
+          </section>
+
+          <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
+            <p className="text-brand-orange text-sm font-bold uppercase">
+              More ways to join
+            </p>
+            <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
+              Coming Soon
+            </h2>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-black/75 md:text-lg">
+              Stage performance, photographer, and volunteer / hiring details
+              are being updated and will be posted here as soon as they are
+              ready.
+            </p>
+          </section>
+
+          <section className="grid gap-4 md:grid-cols-2">
+            {comingSoonOpportunities.map((opportunity) => (
+              <OpportunityCard
+                key={opportunity.title}
+                opportunity={opportunity}
+              />
             ))}
           </section>
 
