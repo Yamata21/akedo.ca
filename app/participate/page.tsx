@@ -204,33 +204,35 @@ export default function ParticipatePage() {
     <main className="bg-white py-24 md:py-32">
       <Container className="max-w-6xl">
         <div className="relative flex flex-col gap-12">
-          <Image
-            alt=""
-            className="absolute -top-16 right-0 hidden h-72 w-60 object-contain md:block lg:h-80 lg:w-[17rem]"
-            height={1974}
-            src="/assets/participate/participationicon.png"
-            width={1644}
-          />
+          <div className="grid items-start gap-8 md:grid-cols-[minmax(0,1fr)_14rem] lg:grid-cols-[minmax(0,1fr)_17rem]">
+            <header className="max-w-3xl">
+              <Heading level="h1" className="text-brand-purple">
+                Participate
+              </Heading>
+              <p className="mt-5 text-lg leading-relaxed text-black/75 md:text-xl">
+                Be part of Ākēdo Festival as an artist, performer, photographer,
+                volunteer, or sponsor. Applications will be posted here as they
+                become available.
+              </p>
+              <Link
+                className="bg-brand-orange hover:bg-brand-purple focus:bg-brand-purple mt-7 inline-flex w-fit items-center rounded-lg px-6 py-3 font-semibold text-white transition-colors"
+                href={ticketUrl}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Buy Tickets
+                <i className="bi bi-arrow-right ml-2" />
+              </Link>
+            </header>
 
-          <header className="max-w-3xl">
-            <Heading level="h1" className="text-brand-purple">
-              Participate
-            </Heading>
-            <p className="mt-5 text-lg leading-relaxed text-black/75 md:text-xl">
-              Be part of Ākēdo Festival as an artist, performer, photographer,
-              volunteer, or sponsor. Applications will be posted here as they
-              become available.
-            </p>
-            <Link
-              className="bg-brand-orange hover:bg-brand-purple focus:bg-brand-purple mt-7 inline-flex w-fit items-center rounded-lg px-6 py-3 font-semibold text-white transition-colors"
-              href={ticketUrl}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Buy Tickets
-              <i className="bi bi-arrow-right ml-2" />
-            </Link>
-          </header>
+            <Image
+              alt=""
+              className="hidden h-72 w-56 justify-self-end object-contain md:block lg:h-80 lg:w-[17rem]"
+              height={1974}
+              src="/assets/participate/participationicon.png"
+              width={1644}
+            />
+          </div>
 
           <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
             <p className="text-brand-orange text-sm font-bold uppercase">
