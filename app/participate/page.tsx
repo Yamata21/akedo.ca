@@ -20,6 +20,10 @@ const ticketUrl = "https://www.zeffy.com/en-CA/ticketing/akedo-festival--2026";
 type Opportunity = {
   title: string;
   description: string;
+  applicationLinks?: {
+    label: string;
+    href: string;
+  }[];
   image?: {
     src: string;
     width: number;
@@ -33,7 +37,37 @@ const opportunities: Opportunity[] = [
   {
     title: "Artist Alley",
     description:
-      "Apply as an artist selling handmade creations such as prints, stickers, keychains, plushies, crafts, or commissions, or as a vendor offering licensed products and retail merchandise.",
+      "Independent creators selling handmade or original works, including stickers, keychains, plushies, crafts, commissions, prints, and other original creations.",
+    applicationLinks: [
+      {
+        label: "Apply for Pop-up",
+        href: "https://docs.google.com/forms/d/e/1FAIpQLSfWUbwQrEHOdfEt5-ZuP7dEMQlqvupayMRvzVvsfFYQJ-Lzzw/viewform",
+      },
+      {
+        label: "Apply for Festival",
+        href: "https://docs.google.com/forms/d/e/1FAIpQLSdOMgdhralmFcrn4AUd05_x8Qa7WqtSHGULwJJjG6zBqTwKPA/viewform",
+      },
+    ],
+    image: {
+      src: "/assets/participate/artist-alley.png",
+      height: 1350,
+      width: 1080,
+    },
+  },
+  {
+    title: "Vendor Hall",
+    description:
+      "Businesses or sellers offering officially licensed products, commercial merchandise, trading cards, collectibles, apparel, and similar retail goods.",
+    applicationLinks: [
+      {
+        label: "Apply for Pop-up",
+        href: "https://docs.google.com/forms/d/e/1FAIpQLScSEJ97YuxeEx8aJhatai9Ura-D3hWMQvkjlrzecbr_dZxXQQ/viewform",
+      },
+      {
+        label: "Apply for Festival",
+        href: "https://docs.google.com/forms/d/e/1FAIpQLScHcJnfUD_B1K3GmVIQhvuwGZ-3kzeUvqu8Z4XmasvuzsYoyQ/viewform",
+      },
+    ],
     image: {
       src: "/assets/participate/artist-alley.png",
       height: 1350,
@@ -107,6 +141,33 @@ export default function ParticipatePage() {
             </Link>
           </header>
 
+          <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
+            <p className="text-brand-orange text-sm font-bold uppercase">
+              Artist Alley & Vendor Hall Applications
+            </p>
+            <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
+              Apply for Ākēdo 2026
+            </h2>
+            <div className="mt-4 grid gap-4 text-base leading-relaxed text-black/75 md:grid-cols-2 md:text-lg">
+              <p>
+                Independent artists and businesses are invited to apply to the
+                Ākēdo Artist Alley & Vendor Hall. Applicants may apply for the
+                Ākēdo Pop-Up Event on September 23, 2026 from 12:00 PM to 5:00
+                PM, Ākēdo Festival on November 7, 2026 from 11:00 AM to 7:00
+                PM, or both events.
+              </p>
+              <p>
+                Applicants must apply under one category only: Artist or Vendor.
+                Please review the application thoroughly; additional details,
+                policies, requirements, and event information are provided
+                within each form.
+              </p>
+            </div>
+            <p className="border-brand-purple/25 text-brand-purple mt-6 w-fit rounded-lg border bg-white px-5 py-3 font-bold">
+              All applications are due Sunday, June 14th, 2026 EDT.
+            </p>
+          </section>
+
           <section className="grid gap-4 md:grid-cols-2">
             {opportunities.map((opportunity) => (
               <article
@@ -162,13 +223,34 @@ export default function ParticipatePage() {
                     ) : null}
                   </>
                 ) : null}
-                <span
-                  className={`border-brand-purple/30 text-brand-purple relative z-10 inline-flex w-fit items-center rounded-lg border bg-[#d8c9f2]/90 px-5 py-3 font-semibold ${
-                    opportunity.image ? "md:max-w-[54%]" : ""
-                  }`}
-                >
-                  Applications Coming Soon
-                </span>
+                {opportunity.applicationLinks ? (
+                  <div
+                    className={`relative z-10 flex w-fit flex-col gap-2 ${
+                      opportunity.image ? "md:max-w-[54%]" : ""
+                    }`}
+                  >
+                    {opportunity.applicationLinks.map((link) => (
+                      <Link
+                        className="bg-brand-orange hover:bg-brand-purple focus:bg-brand-purple rounded-lg px-5 py-3 text-center font-semibold text-white transition-colors"
+                        href={link.href}
+                        key={link.href}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        {link.label}
+                        <i className="bi bi-arrow-right ml-2" />
+                      </Link>
+                    ))}
+                  </div>
+                ) : (
+                  <span
+                    className={`border-brand-purple/30 text-brand-purple relative z-10 inline-flex w-fit items-center rounded-lg border bg-[#d8c9f2]/90 px-5 py-3 font-semibold ${
+                      opportunity.image ? "md:max-w-[54%]" : ""
+                    }`}
+                  >
+                    Applications Coming Soon
+                  </span>
+                )}
               </article>
             ))}
           </section>
