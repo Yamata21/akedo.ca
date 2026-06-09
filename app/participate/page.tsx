@@ -77,7 +77,13 @@ const opportunities: Opportunity[] = [
   {
     title: "Stage Performances",
     description:
-      "We're currently updating the details for this opportunity. Please check back soon.",
+      "Join us on stage at the Ākēdo Festival! Whether you sing, dance, perform in a band, or have a unique talent to showcase, we welcome a variety of acts that bring energy and entertainment to our guests. Visit the application below for details. Applications close August 31st, 11:59 PM.",
+    applicationLinks: [
+      {
+        label: "Apply to Perform",
+        href: "https://forms.gle/RhtevK7g8nahNTGU9",
+      },
+    ],
     image: {
       src: "/assets/participate/stage-performance.png",
       height: 2793,
@@ -108,8 +114,11 @@ const opportunities: Opportunity[] = [
   },
 ];
 
-const applicationOpportunities = opportunities.filter(
-  (opportunity) => opportunity.applicationLinks,
+const artistVendorOpportunities = opportunities.filter((opportunity) =>
+  ["Artist Alley", "Vendor Hall"].includes(opportunity.title),
+);
+const performanceOpportunities = opportunities.filter(
+  (opportunity) => opportunity.title === "Stage Performances",
 );
 const comingSoonOpportunities = opportunities.filter(
   (opportunity) => !opportunity.applicationLinks,
@@ -262,7 +271,29 @@ export default function ParticipatePage() {
           </section>
 
           <section className="grid gap-4 lg:grid-cols-2">
-            {applicationOpportunities.map((opportunity) => (
+            {artistVendorOpportunities.map((opportunity) => (
+              <OpportunityCard
+                key={opportunity.title}
+                opportunity={opportunity}
+              />
+            ))}
+          </section>
+
+          <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
+            <p className="text-brand-orange text-sm font-bold uppercase">
+              Stage Performances
+            </p>
+            <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
+              Performance Application
+            </h2>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-black/75 md:text-lg">
+              Singers, dancers, bands, and unique performers are invited to
+              apply to perform at Ākēdo Festival.
+            </p>
+          </section>
+
+          <section className="grid gap-4 lg:grid-cols-2">
+            {performanceOpportunities.map((opportunity) => (
               <OpportunityCard
                 key={opportunity.title}
                 opportunity={opportunity}
@@ -278,9 +309,8 @@ export default function ParticipatePage() {
               Coming Soon
             </h2>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-black/75 md:text-lg">
-              Stage performance, photographer, and volunteer / hiring details
-              are being updated and will be posted here as soon as they are
-              ready.
+              Photographer and volunteer / hiring details are being updated and
+              will be posted here as soon as they are ready.
             </p>
           </section>
 
