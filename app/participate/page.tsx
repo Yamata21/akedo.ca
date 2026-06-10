@@ -77,7 +77,7 @@ const opportunities: Opportunity[] = [
   {
     title: "Stage Performances",
     description:
-      "Join us on stage at the Ākēdo Festival! Whether you sing, dance, perform in a band, or have a unique talent to showcase, we welcome a variety of acts that bring energy and entertainment to our guests. Visit the application below for details. Applications close August 31st, 11:59 PM.",
+      "Join us on stage at the Ākēdo Festival! Whether you sing, dance, perform in a band, or have a unique talent to showcase, we welcome a variety of acts that bring energy and entertainment to our guests. Visit the application below for details. Applications close September 27th, 11:59 PM.",
     applicationLinks: [
       {
         label: "Apply to Perform",
