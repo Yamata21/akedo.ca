@@ -24,6 +24,7 @@ type Opportunity = {
     label: string;
     href: string;
   }[];
+  statusLabel?: string;
   image?: {
     src: string;
     width: number;
@@ -38,16 +39,7 @@ const opportunities: Opportunity[] = [
     title: "Artist Alley",
     description:
       "Independent creators selling handmade or original works, including stickers, keychains, plushies, crafts, commissions, prints, and other original creations.",
-    applicationLinks: [
-      {
-        label: "Apply for Pop-up",
-        href: "https://docs.google.com/forms/d/e/1FAIpQLSfWUbwQrEHOdfEt5-ZuP7dEMQlqvupayMRvzVvsfFYQJ-Lzzw/viewform",
-      },
-      {
-        label: "Apply for Festival",
-        href: "https://docs.google.com/forms/d/e/1FAIpQLSdOMgdhralmFcrn4AUd05_x8Qa7WqtSHGULwJJjG6zBqTwKPA/viewform",
-      },
-    ],
+    statusLabel: "Applications Closed",
     image: {
       src: "/assets/participate/artist-alley.png",
       height: 1350,
@@ -58,16 +50,7 @@ const opportunities: Opportunity[] = [
     title: "Vendor Hall",
     description:
       "Businesses or sellers offering officially licensed products, commercial merchandise, trading cards, collectibles, apparel, and similar retail goods.",
-    applicationLinks: [
-      {
-        label: "Apply for Pop-up",
-        href: "https://docs.google.com/forms/d/e/1FAIpQLScSEJ97YuxeEx8aJhatai9Ura-D3hWMQvkjlrzecbr_dZxXQQ/viewform",
-      },
-      {
-        label: "Apply for Festival",
-        href: "https://docs.google.com/forms/d/e/1FAIpQLScHcJnfUD_B1K3GmVIQhvuwGZ-3kzeUvqu8Z4XmasvuzsYoyQ/viewform",
-      },
-    ],
+    statusLabel: "Applications Closed",
     image: {
       src: "/assets/participate/vendor-hall.png",
       height: 2000,
@@ -121,7 +104,7 @@ const performanceOpportunities = opportunities.filter(
   (opportunity) => opportunity.title === "Stage Performances",
 );
 const comingSoonOpportunities = opportunities.filter(
-  (opportunity) => !opportunity.applicationLinks,
+  (opportunity) => !opportunity.applicationLinks && !opportunity.statusLabel,
 );
 
 function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
@@ -201,7 +184,7 @@ function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
             opportunity.image ? "xl:max-w-[56%]" : ""
           }`}
         >
-          Applications Coming Soon
+          {opportunity.statusLabel ?? "Applications Coming Soon"}
         </span>
       )}
     </article>
@@ -245,28 +228,14 @@ export default function ParticipatePage() {
 
           <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
             <p className="text-brand-orange text-sm font-bold uppercase">
-              Apply for Ākēdo 2026
+              Applications Closed
             </p>
             <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
               Artist Alley & Vendor Hall Applications
             </h2>
-            <div className="mt-4 grid gap-4 text-base leading-relaxed text-black/75 md:grid-cols-2 md:text-lg">
-              <p>
-                Independent artists and businesses are invited to apply to the
-                Ākēdo Artist Alley & Vendor Hall. Applicants may apply for the
-                Ākēdo Pop-Up Event on September 23, 2026 from 12:00 PM to 5:00
-                PM, Ākēdo Festival on November 7, 2026 from 11:00 AM to 7:00 PM,
-                or both events.
-              </p>
-              <p>
-                Applicants must apply under one category only: Artist or Vendor.
-                Please review the application thoroughly; additional details,
-                policies, requirements, and event information are provided
-                within each form.
-              </p>
-            </div>
-            <p className="border-brand-purple/25 text-brand-purple mt-6 w-fit rounded-lg border bg-white px-5 py-3 font-bold">
-              All applications are due Sunday, June 14th, 2026 EDT.
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-black/75 md:text-lg">
+              Applications are now closed! Thank you to everyone who applied.
+              Please keep an eye on your email for results.
             </p>
           </section>
 
