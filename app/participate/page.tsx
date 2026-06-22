@@ -16,6 +16,9 @@ import { createMetadata } from "@/lib/utils/createMetadata";
 export const metadata = createMetadata({ title: "Participate" });
 
 const ticketUrl = "https://www.zeffy.com/en-CA/ticketing/akedo-festival--2026";
+const volunteerArtistHiringGuideUrl =
+  "https://drive.google.com/file/d/1T9qGqRfpeqw3nAOZNwU3xgzHo3PgY37L/view?usp=drive_link";
+const volunteerArtistApplicationUrl = "https://forms.gle/Dpp24UqAYn49xnCRA";
 
 type Opportunity = {
   title: string;
@@ -86,9 +89,9 @@ const opportunities: Opportunity[] = [
     },
   },
   {
-    title: "Volunteer / Hiring",
+    title: "Other Volunteer / Hiring",
     description:
-      "We're currently updating the details for this opportunity. Please check back soon.",
+      "We're currently updating additional volunteer and hiring details. Please check back soon.",
     image: {
       src: "/assets/participate/volunteer-hiring.png",
       height: 1350,
@@ -228,24 +231,39 @@ export default function ParticipatePage() {
 
           <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
             <p className="text-brand-orange text-sm font-bold uppercase">
-              Applications Closed
+              Volunteer
             </p>
             <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
-              Artist Alley & Vendor Hall Applications
+              Volunteer Artists
             </h2>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-black/75 md:text-lg">
-              Applications are now closed! Thank you to everyone who applied.
-              Please keep an eye on your email for results.
+              Ākēdo Festival is now recruiting Illustrative and Graphic Design
+              Artists to join our Marketing Department. Please view the Hiring
+              Guide for full details and requirements.
             </p>
-          </section>
-
-          <section className="grid gap-4 lg:grid-cols-2">
-            {artistVendorOpportunities.map((opportunity) => (
-              <OpportunityCard
-                key={opportunity.title}
-                opportunity={opportunity}
-              />
-            ))}
+            <p className="border-brand-purple/25 text-brand-purple mt-6 w-fit rounded-lg border bg-white px-5 py-3 font-bold">
+              Applications are due July 5, 2026.
+            </p>
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+              <Link
+                className="bg-brand-orange hover:bg-brand-purple focus:bg-brand-purple inline-flex w-fit items-center rounded-lg px-6 py-3 font-semibold text-white transition-colors"
+                href={volunteerArtistApplicationUrl}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Apply Now
+                <i className="bi bi-arrow-right ml-2" />
+              </Link>
+              <Link
+                className="border-brand-purple/30 text-brand-purple hover:bg-brand-purple focus:bg-brand-purple inline-flex w-fit items-center rounded-lg border bg-white px-6 py-3 font-semibold transition-colors hover:text-white focus:text-white"
+                href={volunteerArtistHiringGuideUrl}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                View Hiring Guide
+                <i className="bi bi-box-arrow-up-right ml-2" />
+              </Link>
+            </div>
           </section>
 
           <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
@@ -278,13 +296,35 @@ export default function ParticipatePage() {
               Coming Soon
             </h2>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-black/75 md:text-lg">
-              Photographer and volunteer / hiring details are being updated and
-              will be posted here as soon as they are ready.
+              Photographer and other volunteer / hiring details are being
+              updated and will be posted here as soon as they are ready.
             </p>
           </section>
 
           <section className="grid gap-4 lg:grid-cols-2">
             {comingSoonOpportunities.map((opportunity) => (
+              <OpportunityCard
+                key={opportunity.title}
+                opportunity={opportunity}
+              />
+            ))}
+          </section>
+
+          <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
+            <p className="text-brand-orange text-sm font-bold uppercase">
+              Applications Closed
+            </p>
+            <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
+              Artist Alley & Vendor Hall Applications
+            </h2>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-black/75 md:text-lg">
+              Applications are now closed! Thank you to everyone who applied.
+              Please keep an eye on your email for results.
+            </p>
+          </section>
+
+          <section className="grid gap-4 lg:grid-cols-2">
+            {artistVendorOpportunities.map((opportunity) => (
               <OpportunityCard
                 key={opportunity.title}
                 opportunity={opportunity}
