@@ -17,7 +17,7 @@ function renderItem(item: NavigationType, setMenuOpen: () => void) {
       key={item.title}
       href={item.href ?? "#"}
       target={item.newWindow ? `_blank` : "_self"}
-      className="text-brand-white hover:bg-brand-white focus:bg-brand-white hover:text-brand-indigo focus:text-brand-indigo rounded-lg px-4 py-2 font-semibold tracking-wide transition-colors"
+      className="text-brand-white hover:bg-brand-white focus:bg-brand-white hover:text-brand-indigo focus:text-brand-indigo inline-flex whitespace-nowrap rounded-lg px-4 py-2 font-semibold tracking-wide transition-colors"
     >
       {item.title}
     </Link>
@@ -67,7 +67,7 @@ export default function Navbar({ items }: { items: NavigationType[] }) {
                 "https://www.zeffy.com/en-CA/ticketing/akedo-festival--2026"
               }
               target="_blank"
-              className="bg-brand-orange hover:bg-brand-white focus:bg-brand-white text-white hover:text-brand-indigo focus:text-brand-indigo rounded-lg px-4 py-2 font-semibold transition-colors"
+              className="bg-brand-orange hover:bg-brand-white focus:bg-brand-white hover:text-brand-indigo focus:text-brand-indigo inline-flex whitespace-nowrap text-white rounded-lg px-4 py-2 font-semibold transition-colors"
             >
               Buy Tickets
               <i className="bi bi-arrow-right ml-1"></i>
@@ -81,10 +81,10 @@ export default function Navbar({ items }: { items: NavigationType[] }) {
         className={`sticky top-0 z-100 m-auto hidden h-18 flex-col justify-end pb-10 text-sm md:flex md:flex-row md:justify-center md:bg-transparent md:pb-0 lg:text-base`}
       >
         <div
-          className={`bg-brand-indigo/95 border-brand-white/20 shadow-brand-indigo/30 flex h-full justify-center border-b px-6 shadow-lg transition-all backdrop-blur-lg ${scrolled ? "w-full rounded-b-2xl xl:w-[80%] 2xl:w-[50%]" : "w-full rounded-b-none"}`}
+          className={`bg-brand-indigo/95 border-brand-white/20 shadow-brand-indigo/30 flex h-full justify-center border-b px-6 shadow-lg transition-all backdrop-blur-lg ${scrolled ? "w-full rounded-b-2xl xl:w-fit xl:max-w-[95vw]" : "w-full rounded-b-none"}`}
         >
           <ul
-            className={`flex h-full ${scrolled ? "translate-x-0" : "md:translate-x-24"} flex-col items-center justify-center gap-3 transition-all md:flex-row lg:gap-6`}
+            className={`flex h-full ${scrolled ? "translate-x-0" : "md:translate-x-24"} flex-col items-center justify-center gap-2 transition-all md:flex-row lg:gap-4 xl:gap-6`}
           >
             {items.map((menuItem) => (
               <li key={menuItem.title}>
@@ -104,7 +104,7 @@ export default function Navbar({ items }: { items: NavigationType[] }) {
                   "https://www.zeffy.com/en-CA/ticketing/akedo-festival--2026"
                 }
                 target="_blank"
-                className="bg-brand-orange hover:bg-brand-white focus:bg-brand-white text-white hover:text-brand-indigo focus:text-brand-indigo rounded-lg px-4 py-2 font-semibold transition-colors"
+                className="bg-brand-orange hover:bg-brand-white focus:bg-brand-white hover:text-brand-indigo focus:text-brand-indigo inline-flex whitespace-nowrap text-white rounded-lg px-4 py-2 font-semibold transition-colors"
               >
                 Buy Tickets
                 <i className="bi bi-arrow-right ml-1"></i>
