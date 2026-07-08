@@ -249,34 +249,6 @@ export default function ParticipatePage() {
 
           <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
             <p className="text-brand-orange text-sm font-bold uppercase">
-              Volunteer
-            </p>
-            <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
-              Volunteer Artists
-            </h2>
-            <p className="mt-4 max-w-3xl text-base leading-relaxed text-black/75 md:text-lg">
-              Volunteer Artist applications are now closed! Thank you to
-              everyone who applied. Please keep an eye on your email for
-              results.
-            </p>
-            <p className="border-brand-purple/25 text-brand-purple mt-6 w-fit rounded-lg border bg-white px-5 py-3 font-bold">
-              Applications closed July 5, 2026.
-            </p>
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-              <Link
-                className="border-brand-purple/30 text-brand-purple hover:bg-brand-purple focus:bg-brand-purple inline-flex w-fit items-center rounded-lg border bg-white px-6 py-3 font-semibold transition-colors hover:text-white focus:text-white"
-                href={volunteerArtistHiringGuideUrl}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                View Hiring Guide
-                <i className="bi bi-box-arrow-up-right ml-2" />
-              </Link>
-            </div>
-          </section>
-
-          <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
-            <p className="text-brand-orange text-sm font-bold uppercase">
               Applications Open July 9
             </p>
             <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
@@ -347,6 +319,34 @@ export default function ParticipatePage() {
                 opportunity={opportunity}
               />
             ))}
+          </section>
+
+          <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
+            <p className="text-brand-orange text-sm font-bold uppercase">
+              Applications Closed
+            </p>
+            <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
+              Volunteer Artists
+            </h2>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-black/75 md:text-lg">
+              Volunteer Artist applications are now closed! Thank you to
+              everyone who applied. Please keep an eye on your email for
+              results.
+            </p>
+            <p className="border-brand-purple/25 text-brand-purple mt-6 w-fit rounded-lg border bg-white px-5 py-3 font-bold">
+              Applications closed July 5, 2026.
+            </p>
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+              <Link
+                className="border-brand-purple/30 text-brand-purple hover:bg-brand-purple focus:bg-brand-purple inline-flex w-fit items-center rounded-lg border bg-white px-6 py-3 font-semibold transition-colors hover:text-white focus:text-white"
+                href={volunteerArtistHiringGuideUrl}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                View Hiring Guide
+                <i className="bi bi-box-arrow-up-right ml-2" />
+              </Link>
+            </div>
           </section>
 
           <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
