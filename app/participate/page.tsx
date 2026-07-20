@@ -16,6 +16,8 @@ import { createMetadata } from "@/lib/utils/createMetadata";
 export const metadata = createMetadata({ title: "Participate" });
 
 const ticketUrl = "https://www.zeffy.com/en-CA/ticketing/akedo-festival--2026";
+const vendorApplicationUrl = "https://forms.gle/mBAmWkUQnYLFYaD78";
+const setupTeardownApplicationUrl = "https://forms.gle/Uog5rCNvujtEzAM2A";
 const volunteerArtistHiringGuideUrl =
   "https://drive.google.com/file/d/1T9qGqRfpeqw3nAOZNwU3xgzHo3PgY37L/view?usp=drive_link";
 
@@ -51,8 +53,13 @@ const opportunities: Opportunity[] = [
   {
     title: "Vendor Hall",
     description:
-      "Businesses or sellers offering officially licensed products, commercial merchandise, trading cards, collectibles, apparel, and similar retail goods.",
-    statusLabel: "Applications Closed",
+      "Businesses or sellers offering officially licensed products, commercial merchandise, trading cards, collectibles, apparel, and similar retail goods. Reapplications welcome.",
+    applicationLinks: [
+      {
+        label: "Apply for Vendor Hall",
+        href: vendorApplicationUrl,
+      },
+    ],
     image: {
       src: "/assets/participate/vendor-hall.png",
       height: 2000,
@@ -94,6 +101,22 @@ const opportunities: Opportunity[] = [
     },
   },
   {
+    title: "Setup/Teardown Volunteers",
+    description:
+      "Help support the community and gain volunteer experience with Ākēdo by assisting with decorating, arranging tables and chairs, transporting supplies, organizing inventory, setting up signage, and supporting departments during setup and teardown.",
+    applicationLinks: [
+      {
+        label: "Apply to Volunteer",
+        href: setupTeardownApplicationUrl,
+      },
+    ],
+    image: {
+      src: "/assets/participate/volunteer-hiring.png",
+      height: 1350,
+      width: 1080,
+    },
+  },
+  {
     title: "Photographer",
     description:
       "We're currently updating the details for this opportunity. Please check back soon.",
@@ -115,11 +138,17 @@ const opportunities: Opportunity[] = [
   },
 ];
 
-const artistVendorOpportunities = opportunities.filter((opportunity) =>
-  ["Artist Alley", "Vendor Hall"].includes(opportunity.title),
+const artistAlleyOpportunities = opportunities.filter(
+  (opportunity) => opportunity.title === "Artist Alley",
+);
+const vendorOpportunities = opportunities.filter(
+  (opportunity) => opportunity.title === "Vendor Hall",
 );
 const cardMarketOpportunities = opportunities.filter(
   (opportunity) => opportunity.title === "Card Market",
+);
+const setupTeardownOpportunities = opportunities.filter(
+  (opportunity) => opportunity.title === "Setup/Teardown Volunteers",
 );
 const performanceOpportunities = opportunities.filter(
   (opportunity) => opportunity.title === "Stage Performances",
@@ -249,7 +278,37 @@ export default function ParticipatePage() {
 
           <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
             <p className="text-brand-orange text-sm font-bold uppercase">
-              Applications Open July 9
+              Applications Open
+            </p>
+            <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
+              Vendor Hall Applications
+            </h2>
+            <div className="mt-4 grid gap-4 text-base leading-relaxed text-black/75 md:grid-cols-2 md:text-lg">
+              <p>
+                Vendor Hall applications are open for a second round for
+                businesses or sellers offering officially licensed products,
+                commercial merchandise, trading cards, collectibles, apparel,
+                and similar retail goods.
+              </p>
+              <p>
+                Reapplications welcome. Applications are due September 28,
+                2026.
+              </p>
+            </div>
+          </section>
+
+          <section className="grid gap-4 lg:grid-cols-2">
+            {vendorOpportunities.map((opportunity) => (
+              <OpportunityCard
+                key={opportunity.title}
+                opportunity={opportunity}
+              />
+            ))}
+          </section>
+
+          <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
+            <p className="text-brand-orange text-sm font-bold uppercase">
+              Applications Open
             </p>
             <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
               Card Market Applications
@@ -270,6 +329,39 @@ export default function ParticipatePage() {
 
           <section className="grid gap-4 lg:grid-cols-2">
             {cardMarketOpportunities.map((opportunity) => (
+              <OpportunityCard
+                key={opportunity.title}
+                opportunity={opportunity}
+              />
+            ))}
+          </section>
+
+          <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
+            <p className="text-brand-orange text-sm font-bold uppercase">
+              Volunteer Applications
+            </p>
+            <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
+              Setup/Teardown Volunteers
+            </h2>
+            <div className="mt-4 grid gap-4 text-base leading-relaxed text-black/75 md:grid-cols-2 md:text-lg">
+              <p>
+                Apply now to help support the community and gain volunteer
+                experience with Ākēdo! As a Setup & Teardown Volunteer,
+                you&apos;ll assist with decorating, arranging tables and chairs,
+                transporting supplies, organizing inventory, setting up signage,
+                and supporting departments throughout the setup and teardown
+                process.
+              </p>
+              <p>
+                Positions are available for our Pop-Up Event on September 23
+                and our Main Festival on November 7. Recruitment will remain
+                open until all volunteer roles have been filled.
+              </p>
+            </div>
+          </section>
+
+          <section className="grid gap-4 lg:grid-cols-2">
+            {setupTeardownOpportunities.map((opportunity) => (
               <OpportunityCard
                 key={opportunity.title}
                 opportunity={opportunity}
@@ -354,7 +446,7 @@ export default function ParticipatePage() {
               Applications Closed
             </p>
             <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
-              Artist Alley & Vendor Hall Applications
+              Artist Alley Applications
             </h2>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-black/75 md:text-lg">
               Applications are now closed! Thank you to everyone who applied.
@@ -363,7 +455,7 @@ export default function ParticipatePage() {
           </section>
 
           <section className="grid gap-4 lg:grid-cols-2">
-            {artistVendorOpportunities.map((opportunity) => (
+            {artistAlleyOpportunities.map((opportunity) => (
               <OpportunityCard
                 key={opportunity.title}
                 opportunity={opportunity}
