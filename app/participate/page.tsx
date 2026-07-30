@@ -18,6 +18,8 @@ export const metadata = createMetadata({ title: "Participate" });
 const ticketUrl = "https://www.zeffy.com/en-CA/ticketing/akedo-festival--2026";
 const vendorApplicationUrl = "https://forms.gle/mBAmWkUQnYLFYaD78";
 const setupTeardownApplicationUrl = "https://forms.gle/Uog5rCNvujtEzAM2A";
+const mediaCrewApplicationUrl =
+  "https://docs.google.com/forms/d/e/1FAIpQLSeJMG-wGJoudaE7QPeyOvx_-kYALO86xWNBn7G-M3TJz5zvQQ/viewform?usp=sharing&ouid=106643813354642850168";
 const volunteerArtistHiringGuideUrl =
   "https://drive.google.com/file/d/1T9qGqRfpeqw3nAOZNwU3xgzHo3PgY37L/view?usp=drive_link";
 
@@ -117,13 +119,19 @@ const opportunities: Opportunity[] = [
     },
   },
   {
-    title: "Photographer",
+    title: "Media Crew Volunteers",
     description:
-      "We're currently updating the details for this opportunity. Please check back soon.",
+      "Volunteer photographers, videographers, and audio enthusiasts are invited to help capture and preserve the memories of Ākēdo Festival.",
+    applicationLinks: [
+      {
+        label: "Apply for Media Crew",
+        href: mediaCrewApplicationUrl,
+      },
+    ],
     image: {
-      src: "/assets/participate/photographer.png",
-      height: 2550,
-      width: 3300,
+      src: "/assets/participate/media-crew.png",
+      height: 3025,
+      width: 2683,
     },
   },
   {
@@ -149,6 +157,9 @@ const cardMarketOpportunities = opportunities.filter(
 );
 const setupTeardownOpportunities = opportunities.filter(
   (opportunity) => opportunity.title === "Setup/Teardown Volunteers",
+);
+const mediaCrewOpportunities = opportunities.filter(
+  (opportunity) => opportunity.title === "Media Crew Volunteers",
 );
 const performanceOpportunities = opportunities.filter(
   (opportunity) => opportunity.title === "Stage Performances",
@@ -371,6 +382,38 @@ export default function ParticipatePage() {
 
           <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
             <p className="text-brand-orange text-sm font-bold uppercase">
+              Volunteer Applications
+            </p>
+            <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
+              Media Crew Volunteers
+            </h2>
+            <div className="mt-4 grid gap-4 text-base leading-relaxed text-black/75 md:grid-cols-2 md:text-lg">
+              <p>
+                Ākēdo Festival is recruiting volunteer photographers,
+                videographers, and audio enthusiasts to help capture and
+                preserve the memories of Ākēdo Festival.
+              </p>
+              <p>
+                We encourage applicants to apply early, as roles are assigned on
+                a first-come, first-served basis. Applications will remain open
+                until October 12, 2026 at 11:59 PM, or until all positions have
+                been filled. View the application for full role descriptions,
+                responsibilities, and application requirements.
+              </p>
+            </div>
+          </section>
+
+          <section className="grid gap-4 lg:grid-cols-2">
+            {mediaCrewOpportunities.map((opportunity) => (
+              <OpportunityCard
+                key={opportunity.title}
+                opportunity={opportunity}
+              />
+            ))}
+          </section>
+
+          <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
+            <p className="text-brand-orange text-sm font-bold uppercase">
               Stage Performances
             </p>
             <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
@@ -399,8 +442,8 @@ export default function ParticipatePage() {
               Coming Soon
             </h2>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-black/75 md:text-lg">
-              Photographer and other volunteer / hiring details are being
-              updated and will be posted here as soon as they are ready.
+              Other volunteer / hiring details are being updated and will be
+              posted here as soon as they are ready.
             </p>
           </section>
 
