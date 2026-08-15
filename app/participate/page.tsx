@@ -20,8 +20,7 @@ const vendorApplicationUrl = "https://forms.gle/mBAmWkUQnYLFYaD78";
 const setupTeardownApplicationUrl = "https://forms.gle/Uog5rCNvujtEzAM2A";
 const mediaCrewApplicationUrl =
   "https://docs.google.com/forms/d/e/1FAIpQLSeJMG-wGJoudaE7QPeyOvx_-kYALO86xWNBn7G-M3TJz5zvQQ/viewform?usp=sharing&ouid=106643813354642850168";
-const volunteerArtistHiringGuideUrl =
-  "https://drive.google.com/file/d/1T9qGqRfpeqw3nAOZNwU3xgzHo3PgY37L/view?usp=drive_link";
+const volunteerArtistApplicationUrl = "https://forms.gle/FTHmxh5ZZMe89txs7";
 
 type Opportunity = {
   title: string;
@@ -66,6 +65,22 @@ const opportunities: Opportunity[] = [
       src: "/assets/participate/vendor-hall.png",
       height: 2000,
       width: 2000,
+    },
+  },
+  {
+    title: "Volunteer Artists",
+    description:
+      "Illustrators, Graphic Designers, and Video Content Creators are invited to join the Ākēdo Marketing Dept. to build their portfolios, develop their skills, collaborate with other creatives, and help support long-term team projects.",
+    applicationLinks: [
+      {
+        label: "Apply for Volunteer Artists",
+        href: volunteerArtistApplicationUrl,
+      },
+    ],
+    image: {
+      src: "/assets/participate/volunteer-hiring.png",
+      height: 1350,
+      width: 1080,
     },
   },
   {
@@ -134,16 +149,6 @@ const opportunities: Opportunity[] = [
       width: 2683,
     },
   },
-  {
-    title: "Other Volunteer / Hiring",
-    description:
-      "We're currently updating additional volunteer and hiring details. Please check back soon.",
-    image: {
-      src: "/assets/participate/volunteer-hiring.png",
-      height: 1350,
-      width: 1080,
-    },
-  },
 ];
 
 const artistAlleyOpportunities = opportunities.filter(
@@ -151,6 +156,9 @@ const artistAlleyOpportunities = opportunities.filter(
 );
 const vendorOpportunities = opportunities.filter(
   (opportunity) => opportunity.title === "Vendor Hall",
+);
+const volunteerArtistOpportunities = opportunities.filter(
+  (opportunity) => opportunity.title === "Volunteer Artists",
 );
 const cardMarketOpportunities = opportunities.filter(
   (opportunity) => opportunity.title === "Card Market",
@@ -163,9 +171,6 @@ const mediaCrewOpportunities = opportunities.filter(
 );
 const performanceOpportunities = opportunities.filter(
   (opportunity) => opportunity.title === "Stage Performances",
-);
-const comingSoonOpportunities = opportunities.filter(
-  (opportunity) => !opportunity.applicationLinks && !opportunity.statusLabel,
 );
 
 function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
@@ -286,6 +291,39 @@ export default function ParticipatePage() {
               width={1644}
             />
           </div>
+
+          <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
+            <p className="text-brand-orange text-sm font-bold uppercase">
+              Volunteer Artist Intake
+            </p>
+            <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
+              Volunteer Artists
+            </h2>
+            <div className="mt-4 grid gap-4 text-base leading-relaxed text-black/75 md:grid-cols-2 md:text-lg">
+              <p>
+                Bring your creativity to Ākēdo! We&apos;re looking for
+                Illustrators, Graphic Designers, and Video Content Creators to
+                join the Ākēdo Marketing Dept. Whether you want to build your
+                portfolio, develop your skills, collaborate with other
+                creatives, or simply have fun, we&apos;d love to have you on the
+                team.
+              </p>
+              <p>
+                This is a long-term volunteer position that requires an ongoing
+                commitment to the team and its projects. Applications are due
+                August 31, 2026 at 11:59 PM.
+              </p>
+            </div>
+          </section>
+
+          <section className="grid gap-4 lg:grid-cols-2">
+            {volunteerArtistOpportunities.map((opportunity) => (
+              <OpportunityCard
+                key={opportunity.title}
+                opportunity={opportunity}
+              />
+            ))}
+          </section>
 
           <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
             <p className="text-brand-orange text-sm font-bold uppercase">
@@ -432,56 +470,6 @@ export default function ParticipatePage() {
                 opportunity={opportunity}
               />
             ))}
-          </section>
-
-          <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
-            <p className="text-brand-orange text-sm font-bold uppercase">
-              More ways to join
-            </p>
-            <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
-              Coming Soon
-            </h2>
-            <p className="mt-4 max-w-3xl text-base leading-relaxed text-black/75 md:text-lg">
-              Other volunteer / hiring details are being updated and will be
-              posted here as soon as they are ready.
-            </p>
-          </section>
-
-          <section className="grid gap-4 lg:grid-cols-2">
-            {comingSoonOpportunities.map((opportunity) => (
-              <OpportunityCard
-                key={opportunity.title}
-                opportunity={opportunity}
-              />
-            ))}
-          </section>
-
-          <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
-            <p className="text-brand-orange text-sm font-bold uppercase">
-              Applications Closed
-            </p>
-            <h2 className="font-brand text-brand-purple mt-2 text-4xl font-bold">
-              Volunteer Artists
-            </h2>
-            <p className="mt-4 max-w-3xl text-base leading-relaxed text-black/75 md:text-lg">
-              Volunteer Artist applications are now closed! Thank you to
-              everyone who applied. Please keep an eye on your email for
-              results.
-            </p>
-            <p className="border-brand-purple/25 text-brand-purple mt-6 w-fit rounded-lg border bg-white px-5 py-3 font-bold">
-              Applications closed July 5, 2026.
-            </p>
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-              <Link
-                className="border-brand-purple/30 text-brand-purple hover:bg-brand-purple focus:bg-brand-purple inline-flex w-fit items-center rounded-lg border bg-white px-6 py-3 font-semibold transition-colors hover:text-white focus:text-white"
-                href={volunteerArtistHiringGuideUrl}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                View Hiring Guide
-                <i className="bi bi-box-arrow-up-right ml-2" />
-              </Link>
-            </div>
           </section>
 
           <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
