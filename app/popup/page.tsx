@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2026 Genshiken Festival Organizing Committee, Contributors and Artists.
+ * Copyright (c) 2026 Akedo Festival Organizing Committee, Contributors and Artists.
  * Copyright (c) 2026 Ontario Anime Society.
  *
  * All rights reserved.
@@ -23,7 +23,7 @@ const mapUrl =
 const eventDetails = [
   {
     label: "Date",
-    value: "September 23, 2026",
+    value: "September 24, 2026",
     icon: "bi-calendar-event",
   },
   {
@@ -59,7 +59,7 @@ export default function PopupPage() {
           <Container className="relative z-10">
             <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(20rem,28rem)]">
               <div>
-                <p className="w-fit rounded-full bg-[#ff8300] px-4 py-2 text-sm font-black uppercase tracking-wide text-white shadow-[0_4px_0_#147c68]">
+                <p className="w-fit rounded-full bg-[#ff8300] px-4 py-2 text-sm font-black tracking-wide text-white uppercase shadow-[0_4px_0_#147c68]">
                   Artist Alley Pop-Up
                 </p>
                 <Heading
@@ -113,7 +113,7 @@ export default function PopupPage() {
                   key={detail.label}
                 >
                   <i className={`bi ${detail.icon} text-2xl text-[#ff8300]`} />
-                  <p className="mt-4 text-sm font-black uppercase text-[#147c68]">
+                  <p className="mt-4 text-sm font-black text-[#147c68] uppercase">
                     {detail.label}
                   </p>
                   <p className="mt-1 text-xl font-black text-[#173f29]">
@@ -129,7 +129,7 @@ export default function PopupPage() {
           <Container>
             <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_24rem] lg:items-start">
               <div>
-                <p className="font-black uppercase text-[#ff8300]">
+                <p className="font-black text-[#ff8300] uppercase">
                   Pop-Up Preview
                 </p>
                 <Heading level="h2" className="mt-2 text-[#147c68]">
@@ -143,7 +143,7 @@ export default function PopupPage() {
                     Japanese pop culture.
                   </p>
                   <p>
-                    Join us in the UC Courtyard on September 23 and browse a
+                    Join us in the UC Courtyard on September 24 and browse a
                     wide selection of artwork from talented local artists
                     featured at this year&apos;s Ākēdo Festival. Prints,
                     stickers, keychains, and other handcrafted merchandise will
@@ -166,8 +166,8 @@ export default function PopupPage() {
                   <li className="flex gap-3">
                     <i className="bi bi-bag-heart-fill mt-1" />
                     <span>
-                      Bring a tote for prints, stickers, keychains, and
-                      handmade finds.
+                      Bring a tote for prints, stickers, keychains, and handmade
+                      finds.
                     </span>
                   </li>
                 </ul>
@@ -180,7 +180,7 @@ export default function PopupPage() {
           <Container>
             <div className="grid gap-8 lg:grid-cols-[minmax(0,22rem)_minmax(0,1fr)] lg:items-stretch">
               <div className="rounded-2xl border-2 border-[#147c68] bg-[#fff568] p-6 shadow-[0_5px_0_#147c68]">
-                <p className="font-black uppercase text-[#ff8300]">Location</p>
+                <p className="font-black text-[#ff8300] uppercase">Location</p>
                 <Heading level="h2" className="mt-2 text-[#147c68]">
                   UC Courtyard
                 </Heading>
@@ -226,8 +226,8 @@ export default function PopupPage() {
           "https://akedofestival.ca/assets/2026/akedo-artist-alley-pop-up.png",
         url: "https://akedofestival.ca/popup",
         typeSpecific: {
-          startDate: "2026-09-23T12:00-04:00",
-          endDate: "2026-09-23T17:00-04:00",
+          startDate: "2026-09-24T12:00-04:00",
+          endDate: "2026-09-24T17:00-04:00",
           eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
           eventStatus: "https://schema.org/EventScheduled",
           location: {
