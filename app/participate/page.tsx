@@ -21,10 +21,13 @@ const setupTeardownApplicationUrl = "https://forms.gle/Uog5rCNvujtEzAM2A";
 const mediaCrewApplicationUrl =
   "https://docs.google.com/forms/d/e/1FAIpQLSeJMG-wGJoudaE7QPeyOvx_-kYALO86xWNBn7G-M3TJz5zvQQ/viewform?usp=sharing&ouid=106643813354642850168";
 const volunteerArtistApplicationUrl = "https://forms.gle/FTHmxh5ZZMe89txs7";
+const guestCosplayerApplicationUrl = "https://forms.gle/qE5UKT8QRpD39gT6A";
+const videoContentCreatorApplicationUrl = "https://forms.gle/ddFq6gNrsiU4VdaFA";
 
 type Opportunity = {
   title: string;
   description: string;
+  reviewNote?: string;
   applicationLinks?: {
     label: string;
     href: string;
@@ -40,6 +43,31 @@ type Opportunity = {
 };
 
 const opportunities: Opportunity[] = [
+  {
+    title: "Guest Cosplayer Application",
+    description:
+      "Join us on November 7th as a Guest Cosplayer! Interact in character with fans and create unforgettable moments with guests of all ages! Sign up now to be a part of our scheduled programming at Ākēdo Festival.",
+    reviewNote:
+      "Applications will be reviewed on a rolling basis, with available positions offered on a first-come, first-served basis.",
+    applicationLinks: [
+      {
+        label: "Apply as a Guest Cosplayer",
+        href: guestCosplayerApplicationUrl,
+      },
+    ],
+  },
+  {
+    title: "Video Content Creator Application",
+    description:
+      "Have your work featured in Ākēdo Festival's promotional campaigns and advertisements, reaching thousands of viewers! Apply now to join our Marketing Department as a Video Content Creator. We are currently seeking volunteer actors, videographers, and video editors.",
+    reviewNote: "Applications will be reviewed on a rolling basis.",
+    applicationLinks: [
+      {
+        label: "Apply as a Video Content Creator",
+        href: videoContentCreatorApplicationUrl,
+      },
+    ],
+  },
   {
     title: "Artist Alley",
     description:
@@ -151,6 +179,11 @@ const opportunities: Opportunity[] = [
   },
 ];
 
+const rollingApplicationOpportunities = opportunities.filter(
+  (opportunity) =>
+    opportunity.title === "Guest Cosplayer Application" ||
+    opportunity.title === "Video Content Creator Application",
+);
 const artistAlleyOpportunities = opportunities.filter(
   (opportunity) => opportunity.title === "Artist Alley",
 );
@@ -188,6 +221,11 @@ function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
         <p className="mt-4 text-base leading-relaxed md:text-lg">
           {opportunity.description}
         </p>
+        {opportunity.reviewNote ? (
+          <p className="mt-4 text-base leading-relaxed md:text-lg">
+            {opportunity.reviewNote}
+          </p>
+        ) : null}
       </div>
       {opportunity.image ? (
         <>
@@ -291,6 +329,18 @@ export default function ParticipatePage() {
               width={1644}
             />
           </div>
+
+          <section
+            aria-label="Rolling applications"
+            className="grid gap-4 lg:grid-cols-2"
+          >
+            {rollingApplicationOpportunities.map((opportunity) => (
+              <OpportunityCard
+                key={opportunity.title}
+                opportunity={opportunity}
+              />
+            ))}
+          </section>
 
           <section className="border-brand-purple/25 rounded-2xl border bg-[#f8f2ff] px-6 py-8 md:px-8">
             <p className="text-brand-orange text-sm font-bold uppercase">

@@ -99,6 +99,12 @@ const policySections: {
     ],
   },
   {
+    title: "Statement on Generative AI",
+    items: [
+      "Ākēdo Festival proudly supports the artist community and is committed to showcasing human-made artwork. AI-generated work is not permitted for sale, display, or promotion within convention spaces under any circumstances.",
+    ],
+  },
+  {
     title: "Cosplay Guidelines",
     items: [
       "All attendees, whether in costume or regular attire, must ensure their attire does not compromise their own safety or the safety of others.",
