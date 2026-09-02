@@ -17,16 +17,18 @@ export default function NotFound() {
       <div className="flex flex-col gap-2">
         <div className="mb-12 flex w-full justify-center">
           <Image
-            alt="Haru, standing against a blue background with a his head clean shaven showing a sparkle. In the distance there is seemingly a ghost of his hair floating up. The caption reads 'I want my hair back' signed, Haru."
-            src={"/assets/mascot/haru_postcard-hairless.webp"}
+            alt="Kiko, in Chibi, kicking into the air with a determined expression on their face."
+            src={"/assets/mascot/chibi/kiko_kick.png"}
             height={600}
             width={300}
           />
         </div>
         <h1 className="text-2xl font-bold">
-          We&apos;re Sorry. Haru might have misplaced that page...
+          We&apos;re Sorry. Kiko might have misplaced that page...
         </h1>
-        <p className="text-lg font-light italic">Just like his hair...</p>
+        <p className="text-lg font-light italic">
+          She&apos;s trying her best to find it...
+        </p>
         <br />
         <Button href="/" className="mx-auto mt-12 border-none" isGhost>
           <i className="bi bi-arrow-left mr-2" />
