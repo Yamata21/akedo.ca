@@ -11,6 +11,7 @@ import Link from "next/link";
 import Container from "@/lib/components/core/Container";
 import Heading from "@/lib/components/core/typography/Heading";
 import { createJSON_LD, createMetadata } from "@/lib/utils/createMetadata";
+import Maps from "@/lib/components/Maps";
 
 export const metadata = createMetadata({ title: "Artist Alley Pop-Up" });
 
@@ -18,7 +19,7 @@ const directionsUrl =
   "https://www.google.com/maps/search/?api=1&query=University%20Centre%20Courtyard%2C%20University%20of%20Guelph%2C%2050%20Stone%20Rd%20E%2C%20Guelph%2C%20ON%20N1G%202W1";
 
 const mapUrl =
-  "https://maps.google.com/maps?q=University%20Centre%20Courtyard%2C%20University%20of%20Guelph%2C%2050%20Stone%20Rd%20E%2C%20Guelph%2C%20ON%20N1G%202W1&output=embed";
+  "!1m18!1m12!1m3!1d2892.648502340325!2d-80.22883522315604!3d43.53052207110814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9b2eb265211f%3A0x8677ac225d47cff1!2sUniversity%20Centre!5e0!3m2!1sen!2sca!4v1788310767923!5m2!1sen!2sca";
 
 const eventDetails = [
   {
@@ -203,14 +204,15 @@ export default function PopupPage() {
               </div>
 
               <div className="relative min-h-72 overflow-hidden rounded-2xl border-2 border-[#147c68] shadow-[0_5px_0_#147c68]">
-                <iframe
+                {/* <iframe
                   allowFullScreen={false}
                   className="h-full min-h-72 w-full"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   src={mapUrl}
                   title="Map to University Centre Courtyard at the University of Guelph"
-                />
+                /> */}
+                <Maps embedCode={mapUrl} themed={false} />
               </div>
             </div>
           </Container>
