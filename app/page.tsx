@@ -14,7 +14,9 @@ import Heading from "@/lib/components/core/typography/Heading";
 import Maps from "@/lib/components/Maps";
 import EarlyBirdPopup from "@/lib/components/pages/home/EarlyBirdPopup";
 import Hero from "@/lib/components/pages/home/Hero";
+import CFRULogo from "@/public/assets/2026/sponsors/CFRU_Logo_2025-long.png";
 
+import Image from "next/image";
 import { createJSON_LD, createMetadata } from "@/lib/utils/createMetadata";
 
 export const metadata = createMetadata({ title: "2026" });
@@ -43,78 +45,6 @@ export default function Home() {
             performances, vendors, artists, and a maid café. The event offers a
             fun and engaging experience for attendees of all ages.
           </Callout>
-          {/* <section className="pb-12" id="events">
-            <Heading level="h2">Events</Heading>
-            <p className="mt-4 block md:mt-8 md:text-lg">
-              Interested about what&apos;s going on?! Tap on the events below to
-              learn more ⬇️
-            </p>
-            <div className="mt-8 flex flex-col">
-              <div className="mt-4 grid min-w-full grid-flow-col grid-rows-1 gap-4 md:max-h-[30vh] md:grid-rows-3">
-                <EventCard
-                  icon="heart-fill ml-1.5"
-                  eventName="View Full Event Guide"
-                  className="col-span-2 md:row-span-3"
-                  href="/assets/2026/Genshiken_2026_Guide.pdf"
-                  image={{
-                    src: "/assets/2026/haru-aki-2026.jpg",
-                    width: 3177,
-                    height: 1667,
-                    className:
-                      "h-full min-h-full w-full min-w-full object-cover object-center",
-                  }}
-                />
-              </div>
-              <div className="mt-4 grid max-h-[70vh] min-w-full grid-flow-col grid-rows-4 gap-4 md:grid-rows-3">
-                <EventCard
-                  className="col-span-2 md:col-auto md:max-w-full"
-                  eventName="Maid Cafe"
-                  href="/assets/2026/Genshiken_2026_Guide.pdf#page=15"
-                  image={{
-                    src: "/assets/events/phillp-mc-haru-aki-edit-genfest-24.webp",
-                    width: 1920,
-                    height: 1080,
-                  }}
-                />
-                <EventCard
-                  className="col-span-2 md:col-auto md:max-w-full"
-                  eventName="Live Performances"
-                  href="/assets/2026/Genshiken_2026_Guide.pdf#page=16"
-                  image={{
-                    src: "/assets/events/phillp-gi-genfest-24.webp",
-                    width: 3177,
-                    height: 1667,
-                    className:
-                      "h-full min-h-full w-full min-w-full object-cover object-top",
-                  }}
-                />
-                <EventCard
-                  className="col-span-2 md:col-auto md:max-w-full"
-                  href="/assets/2026/Genshiken_2026_Guide.pdf#page=17"
-                  eventName="Cosplay Contest"
-                  image={{
-                    src: "/assets/events/phillp-cc-genfest-24.webp",
-                    width: 3177,
-                    height: 1667,
-                    className:
-                      "h-full min-h-full w-full min-w-full object-cover object-top",
-                  }}
-                />
-                <EventCard
-                  eventName="Artist Alley"
-                  className="col-span-2 md:row-span-3"
-                  href="/assets/2026/Genshiken_2026_Guide.pdf#page=14"
-                  image={{
-                    src: "/assets/events/phillp-aa-genfest-24.webp",
-                    width: 3177,
-                    height: 1667,
-                    className:
-                      "h-full min-h-full w-full min-w-full object-cover object-center",
-                  }}
-                />
-              </div>
-            </div>
-          </section> */}
           <section className="flex flex-col gap-4 pb-12 lg:gap-12" id="venue">
             <Heading level="h2">Venue and Location</Heading>
 
@@ -161,16 +91,44 @@ export default function Home() {
               </div>
               <Maps
                 className={"lg:flex-2"}
-                src="https://maps.google.com/maps?q=University%20Centre%2C%2050%20Stone%20Rd%20E%2C%20Guelph%2C%20ON%20N1G%202W1&output=embed"
+                embedCode="!1m18!1m12!1m3!1d23140.412652954044!2d-80.25016221100557!3d43.53254286591808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9b2eb265211f%3A0x8677ac225d47cff1!2sUniversity%20Centre!5e0!3m2!1sen!2sca!4v1788307832249!5m2!1sen!2sca"
               />
             </div>
-            {/* <Paragraph>
-            Genshiken Festival will take place in the beautiful Warehouse Venue
-            located in Downsview Park! The venue is just a short walk from
-            Downsview GO, and Downsview Park Station on Line 1
-          </Paragraph> */}
+            <section
+              className="mt-8 -mb-8 flex flex-col gap-4 pb-0 lg:mt-0 lg:gap-4"
+              id="sponsors"
+            >
+              <Heading level="h2">Sponsors</Heading>
+
+              <div className="flex flex-col">
+                <p className="text-lg">
+                  Ākēdo Festival was made possible thanks to our sponsors!
+                </p>
+                <div className="w-full flex-1">
+                  <Image
+                    src={CFRULogo}
+                    width="300"
+                    height="100"
+                    alt="CFRU Logo"
+                    className="-mb-12"
+                  />
+                  <p className="mb-0 italic">
+                    CFRU 93.3FM is Guelph’s campus/community radio station and
+                    media centre, located on the second floor of the University
+                    Centre. We are a volunteer-based space, recognizing the
+                    essential contributions of volunteers and supporting people
+                    in their efforts to express themselves through media. We
+                    draw from the rich variety of skills and perspectives that
+                    Guelph and surrounding communities have to offer in order to
+                    create quality programming and to better serve the
+                    community. If interested in volunteering, please contact
+                    volunteer@cfru.ca!
+                  </p>
+                </div>
+              </div>
+            </section>
           </section>
-          <section className="flex flex-col gap-4 pb-12 lg:gap-12">
+          <section className="flex flex-col gap-4 pb-14 lg:gap-12">
             <Heading level="h2">Connect With Us</Heading>
             <div className="mx-auto mt-8 mb-8 flex max-w-2xl justify-between gap-4 text-2xl md:text-4xl lg:mt-4 lg:min-w-lg xl:min-w-xl">
               <a
