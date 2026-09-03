@@ -20,7 +20,7 @@ const vendorApplicationUrl = "https://forms.gle/mBAmWkUQnYLFYaD78";
 const setupTeardownApplicationUrl = "https://forms.gle/Uog5rCNvujtEzAM2A";
 const mediaCrewApplicationUrl =
   "https://docs.google.com/forms/d/e/1FAIpQLSeJMG-wGJoudaE7QPeyOvx_-kYALO86xWNBn7G-M3TJz5zvQQ/viewform?usp=sharing&ouid=106643813354642850168";
-const volunteerArtistApplicationUrl = "https://forms.gle/FTHmxh5ZZMe89txs7";
+const volunteerArtistApplicationUrl = "https://forms.gle/1CyEFmmTwt5cdwrj9";
 const guestCosplayerApplicationUrl = "https://forms.gle/qE5UKT8QRpD39gT6A";
 const videoContentCreatorApplicationUrl = "https://forms.gle/ddFq6gNrsiU4VdaFA";
 
@@ -360,8 +360,7 @@ export default function ParticipatePage() {
               </p>
               <p>
                 This is a long-term volunteer position that requires an ongoing
-                commitment to the team and its projects. Applications are due
-                August 31, 2026 at 11:59 PM.
+                commitment to the team and its projects.
               </p>
             </div>
           </section>
